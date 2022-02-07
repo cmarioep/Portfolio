@@ -1,0 +1,21 @@
+// Map for color scheme
+$colors: (
+    primary: (
+        dark: hsl(166, 100%, 35%),
+        neutral: hsl(166, 100%, 70%),
+        light: hsl(166, 100%, 90%),
+        lightest: hsl(166, 100%, 95%),
+    ),
+    secondary: (
+        dark: hsl(225, 20%, 35%),
+        neutral: hsl(225, 20%, 61%),
+        light: hsl(225, 20%, 80%),
+        lightest: hsl(225, 80%, 90%),
+    ),
+    dark: (
+        dark: hsl(240, 20%, 5%),
+        neutral: hsl(240, 20%, 10%),
+        light: hsl(240, 20%, 15%),
+        lightest: hsl(240, 20%, 20%),
+    )
+);

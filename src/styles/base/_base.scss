@@ -1,0 +1,11 @@
+@use '../utils/' as *;
+
+:root {
+    // Make custom variables for scheme colors from color map
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+// ******  Color Function  ****** 
+// gets color and shade as parameter:
+    // colors: primary, secondary, dark
+    // shades: dark, neutral, light, lightest
+@function color($color, $shade) {
+    @return var(--clr-#{$color}-#{$shade});
+}
+

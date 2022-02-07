@@ -1,0 +1,24 @@
+@use '../utils/' as *;
+
+
+.gradient-title {
+    width: 100%;
+    margin-bottom: 3rem;
+
+
+    text-align: center;
+    // font-family: $fancy;
+    font-weight: 900;
+
+    :nth-child(n) {
+        font-size: clamp(65px, 10vw, 160px);
+        background: linear-gradient(color(primary, neutral), color(dark, dark) 85%);
+        opacity: 0.35;
+    
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
