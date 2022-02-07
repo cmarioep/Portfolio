@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "char-animation": "^1.1.1",
     "gatsby": "^4.6.2",
     "gatsby-plugin-sass": "^5.6.0",
     "react": "^17.0.1",
