@@ -2,8 +2,11 @@ import * as React from "react";
 
 import GradientTitle from "../components/GradientTitle";
 
+
 // styles
 import '../styles/index.scss'
+
+
 // markup
 const IndexPage = () => {
 

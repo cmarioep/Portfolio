@@ -9,3 +9,14 @@
     }
 
 }
+
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: color(dark, dark);
+    overflow-x: hidden;
+}
