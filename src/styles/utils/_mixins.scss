@@ -15,3 +15,27 @@
         }
     }
 };
+
+
+// Mixin for font-size
+// Default values are defined in the variables file
+@mixin font-size($size) {
+    //Conditional in case there is needed an extra breakpoint
+    @if map-has-key($fontSizes, $size) {
+        font-size: map-get($fontSizes, $size)
+    } @else {
+        font-size: $size;
+    }
+};
+
+
+// Mixin z-index layers
+// Default values are defined in the variables file
+@mixin z-index($layer) {
+    //Conditional in case there is needed an extra layer
+    @if map-has-key($layers, $layer) {
+        z-index: map-get($layers, $layer)
+    } @else {
+        z-index: $layer;
+    }
+};

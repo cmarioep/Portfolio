@@ -1,22 +1,6 @@
 @use '../utils/' as *;
 
 
-// Placeholder: General display for content
-%general-display {
-
-    display: flex;
-    width: 100%;
-    
-    :last-child {
-        margin-bottom: 0;
-    }
-    
-    @include mq(medium) {
-        width: 70%;
-    }
-}
-
-
 // General layout
 .ly-{
     &viewport {
@@ -35,7 +19,6 @@
             padding-top: 0rem;
         }
 
-        // outline: 1px solid #64FFDA;
     }
 
 

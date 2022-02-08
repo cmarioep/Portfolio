@@ -21,6 +21,17 @@ $colors: (
 );
 
 
+// Map for font-size
+$fontSizes: (
+    small: clamp(0.8rem, 1vw, 1.1rem),
+    standar: clamp(1.1rem, 1.25vw, 1.25rem),
+    intermediate: clamp(28px, 2vw, 2rem),
+    medium: clamp(32px, 3vw, 48px),
+    large: clamp(48px, 4vw, 80px),
+    xlarge: clamp(60px, 10vw, 160px)
+);
+
+
 // Map breakpoints for media queries
 $breakpoints: (
     small: 320px,
