@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import GradientTitle from "../components/GradientTitle";
+import About from "../components/sections/About";
 
 
 // styles
@@ -12,9 +12,7 @@ const IndexPage = () => {
 
   return (
     <main>
-      <GradientTitle title="Titulo 1"/>
-      <GradientTitle title="Titulo 2"/>
-      <GradientTitle title="Titulo 3"/>
+      <About/>
     </main>
   )
 }
