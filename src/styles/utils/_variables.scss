@@ -19,3 +19,29 @@ $colors: (
         lightest: hsl(240, 20%, 20%),
     )
 );
+
+
+// Map breakpoints for media queries
+$breakpoints: (
+    small: 320px,
+    standar: 375px,
+    intermediate: 768px,
+    medium: 1024px,
+    large: 1280px,
+    xlarge: 1366px
+);
+
+
+// Map for z-index layers
+$layers :(
+    outerspace: 10000,
+    moon: 1000,
+    orbit: 100,
+    sky: 10,
+    everest: 1,
+    ground: 0,
+    underground: -1,
+    cortex:-10,
+    mantle:-100,
+    nucleus:-1000
+);

@@ -1,0 +1,49 @@
+@use '../utils/' as *;
+
+
+// Placeholder: General display for content
+%general-display {
+
+    display: flex;
+    width: 100%;
+    
+    :last-child {
+        margin-bottom: 0;
+    }
+    
+    @include mq(medium) {
+        width: 70%;
+    }
+}
+
+
+// General layout
+.ly-{
+    &viewport {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100%;
+        min-height: 100vh;
+        padding: 1rem;
+        overflow: hidden;
+
+        @include mq(large) {
+            padding-top: 0rem;
+        }
+
+        // outline: 1px solid #64FFDA;
+    }
+
+
+    &viewportGap {
+        margin-bottom: 10vh;
+
+        @include mq(xlarge) {
+            margin-bottom: 20vh;
+        }
+    }
+}
