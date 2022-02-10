@@ -12,7 +12,9 @@ export default function GradientTitle(props) {
     charAnimation(
       {
         selector: ".gradient-title", 
-        animation: "rubberBand",  
+        animation: "rubberBand",
+        color : "",
+        stroke : "#66ffdb"  
       }
     );
   });
