@@ -17,7 +17,11 @@
   "dependencies": {
     "char-animation": "^1.1.1",
     "gatsby": "^4.6.2",
+    "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-sass": "^5.6.0",
+    "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-source-filesystem": "^4.7.0",
+    "gatsby-transformer-sharp": "^4.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.49.7"

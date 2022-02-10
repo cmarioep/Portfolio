@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 
 import GradientTitle from "../GradientTitle";
 
@@ -21,7 +22,7 @@ export default function Section() {
           </div>
                 
           <div className="description__picture">
-            <img src="./src/images/astronaut_head.png" alt="My Picture"/>
+            <StaticImage src="../../images/astronaut_head.png" alt="My Picture"/>
           </div>
         </div>
 
