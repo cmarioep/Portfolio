@@ -87,6 +87,28 @@
         }
 
     }
+
+    &__skillsCloud {
+        width: 400px;
+        height: 400px;
+        margin: 1rem auto;
+        // overflow: hidden;
+
+        // outline: 1px solid #d6922b;
+
+        /* styles for the 3D tagcloud */
+        & .tagcloud--item {
+            color: #8892b0;
+        }
+
+        & .tagcloud--item:hover {
+            color: #64FFDA;
+        }
+
+        @include mq(large) {
+            margin: 0;
+        }
+    }
     
 }
 
