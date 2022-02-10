@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import About from "../components/sections/About";
-import About from "../components/sections/Skills";
+import Skills from "../components/sections/Skills";
 
 
 // styles
