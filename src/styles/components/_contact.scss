@@ -1,0 +1,57 @@
+@use '../../styles/utils/' as *;
+
+
+.contact {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    width: 100%;
+    
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    
+    @include mq(medium) {
+        width: 70%;
+    }
+    
+
+    &__text {
+        width: 100%;
+
+        text-align: center;
+
+
+        @include mq(intermediate) {
+            width: 50%;
+        }
+
+        
+        :nth-child(n):not(a) {
+            @include font-size(standar);
+            color: color(secondary, neutral);
+        }
+
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+
+        a {
+            text-decoration-line: none;
+            @include font-size(standar);
+            color: color(primary, neutral);
+        
+            &:visited {
+                text-decoration: none;
+                color: color(primary, neutral);
+            }
+        }
+    }
+
+}

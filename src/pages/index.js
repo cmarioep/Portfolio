@@ -2,6 +2,7 @@ import * as React from "react";
 
 import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
+import Contact from "../components/sections/Contact";
 
 
 // styles
@@ -15,6 +16,7 @@ const IndexPage = () => {
     <main>
       <About/>
       <Skills/>
+      <Contact/>
     </main>
   )
 }
