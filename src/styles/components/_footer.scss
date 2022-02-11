@@ -1,0 +1,25 @@
+    @use '../utils/' as *;
+    
+    .footer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        min-height: 12vh;
+        height: auto;
+        
+
+        p {
+            @include font-size(small);
+            color: color(secondary, neutral);
+
+    
+            span {
+                color: color(primary, dark);
+            }
+        }
+
+
+    }
