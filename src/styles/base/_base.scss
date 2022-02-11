@@ -1,5 +1,6 @@
 @use '../utils/' as *;
 
+
 :root {
     // Make custom variables for scheme colors from color map
     @each $color, $shades in $colors {
@@ -19,4 +20,47 @@ html:focus-within {
 body {
     background-color: color(dark, dark);
     overflow-x: hidden;
+}
+
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: $serif;
+    line-height: 1.1;
+}
+
+
+p, 
+a, 
+ul, 
+ol, 
+li {
+    font-family: $sans;
+    line-height: 1.3;
+}
+
+
+a {
+    text-decoration-line: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: color(secondary, neutral);
+}
+
+
+ul, 
+ol {
+  list-style: none;
+}
+
+
+li {
+    line-height: 1.5;
 }

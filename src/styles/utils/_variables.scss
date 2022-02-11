@@ -21,6 +21,12 @@ $colors: (
 );
 
 
+// Font families
+$sans: Calibre, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$serif: 'Times New Roman', Times, serif;
+$fancy:  'Muli', sans-serif;
+
+
 // Map for font-size
 $fontSizes: (
     small: clamp(0.8rem, 1vw, 1.1rem),
