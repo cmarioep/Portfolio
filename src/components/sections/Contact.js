@@ -1,6 +1,7 @@
 import React from 'react';
 
 import GradientTitle from "../GradientTitle";
+import Button from "../Button";
 
 // styles
 import '../../styles/layout/_layout.scss';
@@ -18,10 +19,10 @@ export default function Section() {
                   <p>Want to say "Hey!"? Got something you'd like to ask? New project or opportunity? Want to hire me?</p>
               </div>
 
-              <a className="button" href="mailto:cmescandonpardo@gmail.com">Ping me!</a>
+              <Button link="mailto:cmescandonpardo@gmail.com" label="Ping me!" />
 
               <div className="contact__text">
-                  <p>Prefer a face to face? <a href="https://calendly.com/cmarioep/30min" target="_blank">Schedule a call</a></p>
+                  <p>Prefer a face to face? <a href="https://calendly.com/cmarioep/30min" target="_blank" rel="noreferrer">Schedule a call</a></p>
               </div>
 
 

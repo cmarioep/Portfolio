@@ -1,0 +1,51 @@
+@use '../utils/' as *;
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45%;
+    height: 6vh;
+    margin: 2.5rem 0;
+    border: 1px solid color(primary, neutral);
+    border-radius: 5px;
+    
+    text-decoration-line: none;
+    @include font-size(standar);
+    color: color(primary, neutral);
+    
+    
+    &:hover {
+        border: 2px solid color(primary, neutral);
+        
+        text-shadow: 0 0 10px color(primary, neutral), 
+                    0 0 30px color(primary, neutral),
+                    0 0 80px color(primary, neutral);
+    }
+
+
+    &:visited {
+        text-decoration: none;
+        color: color(primary, neutral);
+    }
+
+
+    @include mq(intermediate) {
+        width: 20%;
+        height: 5vh;
+    }
+
+
+    @include mq(medium) {
+        height: 6vh;
+    }
+
+
+    @include mq(xlarge) {
+        height: 8vh;
+    }
+
+
+}
