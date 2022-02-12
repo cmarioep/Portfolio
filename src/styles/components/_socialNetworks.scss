@@ -1,0 +1,140 @@
+@use '../utils' as *;
+
+
+.socialNetworks {
+
+    width: 100%;
+
+
+    @include mq(medium) {
+        position: fixed;
+        bottom: 0;
+        left: 2.5%;
+        @include z-index(ground);
+
+        width: auto;
+    }
+
+
+    &--mail {
+        display: none;
+        left: 94%;
+        bottom: -1.5rem;
+
+        width: auto;     
+
+
+        @include mq(medium) {
+            display: initial;
+        }
+
+
+        a {
+            padding: 0.7rem;
+
+            writing-mode: vertical-rl;
+            @include font-size(small);
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: color(secondary, neutral);
+        }
+
+
+        &::after {
+            content: "";
+            display: block;
+            
+            width: 1px;
+            height: 100px;
+            margin: 0 auto;
+
+            background-color: color(secondary, neutral);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        @include mq (medium) {
+            display: block;
+            
+            // Bottom line after social items
+            &::after {
+                content: "";
+                display: block;
+
+                width: 1px;
+                height: 100px;
+                margin: 0 auto;
+                margin-top: 1rem;
+
+                background-color: color(secondary, neutral);
+            }
+        }
+
+    }
+    
+
+    &__item {
+    
+        &:last-child {
+            margin-bottom: 0;
+
+            @include mq (medium) {
+                margin-bottom: 1rem;
+            }
+        }
+   
+    }
+
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding: 0.7rem;
+
+
+        &:hover svg{
+            animation: fill_scale 0.3s ease-out forwards;
+        }
+
+
+        svg {
+            width: 24px;
+            fill: #a8b2d1;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+                             
+
+            @include mq (medium) {
+                width: 24px;
+            }
+        }
+
+    }
+
+}
+
+
+@keyframes fill {
+    to {
+        fill: color(primary, neutral);
+    }
+}
+
+
+@keyframes fill_scale {
+    to {
+        fill: color(primary, neutral);
+        transform: translateY(-0.3rem) scale(1.2);
+    }
+}
+
+
+@keyframes slideUp {
+    to {
+        transform: translateY(-0.3rem);
+    }
+}

@@ -4,7 +4,7 @@ import About from "../sections/About";
 import Skills from "../sections/Skills";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
-
+import SocialNetworks from "../components/SocialNetworks";
 
 // styles
 import '../styles/index.scss'
@@ -18,6 +18,7 @@ const IndexPage = () => {
       <About/>
       <Skills/>
       <Contact/>
+      <SocialNetworks/>
       <Footer/>
     </main>
   )
