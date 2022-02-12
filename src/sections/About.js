@@ -1,11 +1,11 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 
-import GradientTitle from "../GradientTitle";
+import GradientTitle from "../components/GradientTitle";
 
 // styles
-import '../../styles/layout/_layout.scss';
-import '../../styles/components/_description.scss';
+import '../styles/layout/_layout.scss';
+import '../styles/components/_description.scss';
 
 
 export default function Section() {

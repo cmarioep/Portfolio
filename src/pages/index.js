@@ -1,9 +1,9 @@
 import * as React from "react";
 
-import About from "../components/sections/About";
-import Skills from "../components/sections/Skills";
-import Contact from "../components/sections/Contact";
-import Footer from "../components/sections/Footer";
+import About from "../sections/About";
+import Skills from "../sections/Skills";
+import Contact from "../sections/Contact";
+import Footer from "../sections/Footer";
 
 
 // styles

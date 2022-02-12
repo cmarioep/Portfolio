@@ -1,13 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import GradientTitle from "../GradientTitle";
+import GradientTitle from "../components/GradientTitle";
 import TagCloud from 'TagCloud';
-import {tags, options} from '../utils/TagCloudConfig';
+import {tags, options} from '../components/utils/TagCloudConfig';
 
 // styles
-import '../../styles/layout/_layout.scss';
-import '../../styles/components/_description.scss';
+import '../styles/layout/_layout.scss';
+import '../styles/components/_description.scss';
 
 
 export default function Skills() {

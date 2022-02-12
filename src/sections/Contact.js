@@ -1,11 +1,11 @@
 import React from 'react';
 
-import GradientTitle from "../GradientTitle";
-import Button from "../Button";
+import GradientTitle from "../components/GradientTitle";
+import Button from "../components/Button";
 
 // styles
-import '../../styles/layout/_layout.scss';
-import '../../styles/components/_contact.scss';
+import '../styles/layout/_layout.scss';
+import '../styles/components/_contact.scss';
 
 
 export default function Section() {
