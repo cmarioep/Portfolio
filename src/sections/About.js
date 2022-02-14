@@ -8,7 +8,7 @@ import '../styles/layout/_layout.scss';
 import '../styles/components/_description.scss';
 
 
-export default function Section() {
+export default function About() {
   return (
     <section className='ly-viewport'>
 

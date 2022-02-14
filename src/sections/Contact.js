@@ -8,7 +8,7 @@ import '../styles/layout/_layout.scss';
 import '../styles/components/_contact.scss';
 
 
-export default function Section() {
+export default function Contact() {
   return (
     <section className='ly-viewport'>
 
