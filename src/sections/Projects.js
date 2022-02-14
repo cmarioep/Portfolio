@@ -5,7 +5,7 @@ import BigCard from "../components/BigCard";
 
 // styles
 import '../styles/layout/_layout.scss';
-import '../styles/components/_projects.scss';
+
 
 const projects = [
   {
@@ -21,11 +21,15 @@ export default function Projects(props) {
 
         <GradientTitle title="Projects"/>
 
-        <div className="projects">
+        <div className="ly-blockFlow">
           <BigCard
             title={projects[0].title}
             description={projects[0].description}
           />
+        </div>
+
+        <div className="ly-inlineFlow">
+
         </div>
 
     </section>

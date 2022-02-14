@@ -1,6 +1,25 @@
 @use '../utils/' as *;
 
 
+// Placeholder: General display for content
+%general-display {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    
+    @include mq(medium) {
+        width: 70%;
+    }
+}
+
+
 // General layout
 .ly-{
     &viewport {
@@ -29,4 +48,18 @@
             margin-bottom: 20vh;
         }
     }
+
+
+    &blockFlow {
+        @extend %general-display;
+        flex-flow: column;
+    }
+
+
+    &inlineFlow {
+        @extend %general-display;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
 }
