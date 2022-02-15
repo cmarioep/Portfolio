@@ -26,6 +26,12 @@ export default function Projects(props) {
             title={projects[0].title}
             description={projects[0].description}
           />
+
+          <BigCard
+            align = "--mirror"
+            title={projects[0].title}
+            description={projects[0].description}
+          />
         </div>
 
         <div className="ly-inlineFlow">

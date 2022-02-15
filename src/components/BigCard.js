@@ -6,9 +6,12 @@ import '../styles/components/_cards.scss';
 
 
 export default function BigCard(props) {
+
+    const cardStyle = 'bigCard ' + props.align;
+
     return (
 
-        <div className="bigCard">
+        <div className={cardStyle}>
 
             <div className="bigCard__content">
 
