@@ -34,6 +34,9 @@ export default function Projects(props) {
             description={projects[0].description}
           />
         </div>
+
+        {/* sytle for h2 are defined on styles/base/_base.scss */}
+        <h2>Other Noteworthy Projects</h2>
   
         <div className="ly-inlineFlow">
           <SmallCard />

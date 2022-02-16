@@ -12,8 +12,32 @@
 }
 
 
+* {
+    font-size: 1rem;
+    font-smooth: always;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+html,
 html:focus-within {
     scroll-behavior: smooth;
+}
+
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
 }
 
 
@@ -31,6 +55,20 @@ h5,
 h6 {
     font-family: $serif;
     line-height: 1.1;
+}
+
+
+h2 {
+    margin: 3rem 0;
+
+    text-align: center;
+    @include font-size(medium);
+    color: color(primary, dark);
+    
+
+    @include mq(large) {
+        margin: 6rem auto;
+    }
 }
 
 
@@ -63,4 +101,19 @@ ol {
 
 li {
     line-height: 1.5;
+}
+
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
