@@ -2,6 +2,7 @@ import React from 'react';
 
 import GradientTitle from "../components/GradientTitle";
 import BigCard from "../components/BigCard";
+import SmallCard from "../components/SmallCard";
 
 // styles
 import '../styles/layout/_layout.scss';
@@ -33,9 +34,11 @@ export default function Projects(props) {
             description={projects[0].description}
           />
         </div>
-
+  
         <div className="ly-inlineFlow">
-
+          <SmallCard />
+          <SmallCard />
+          <SmallCard />
         </div>
 
     </section>

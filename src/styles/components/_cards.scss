@@ -268,3 +268,119 @@
     }
 }
 
+
+.smallCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    margin-bottom: 1.5rem;
+    border-radius: 1%;
+    padding: 1rem;
+
+    background-color: color(dark, neutral);
+
+    transition: transform 0.5s cubic-bezier(0.645,0.045,0.355,1);
+
+    // outline: 1px dashed rgb(201, 23, 23);
+
+    &:hover {
+        animation: slideUp 0.3s ease-out forwards;
+    }
+     
+    @include mq(intermediate) {
+        width: 45%;
+    }
+
+    @include mq (xlarge) {
+        width: 30%;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    &__title {
+        font-family: $serif;
+        font-weight: bold;
+        @include font-size(intermediate);
+        color: color(primary, dark);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include z-index(everest);
+            width: 100%;
+            height: 100%;
+            border-radius: 1%;
+        }
+
+
+    }
+
+    &__details {
+        // margin: 0.5rem 0;
+        
+        line-height: 1.4;
+        color: color(secondary, neutral);
+    }
+
+    &__skills {
+        margin-top: 1rem;
+
+        li {
+            margin-right: 0.5rem;
+            @include font-size(small);
+            color: color(primary, dark);
+
+            @include mq (large) {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+
+    &__skills, &__links {
+        display: flex;
+        // outline: 1px dashed rgb(212, 130, 53);
+
+
+        li {
+            // outline: 1px dashed rgb(8, 163, 91);
+            // margin-right: 0.5rem;
+            @include font-size(small);
+            color: color(primary, dark);
+
+            // @include mq (large) {
+            //     margin-right: 1rem;
+            // }
+        }
+
+        &__repository {
+            display: inline-block;
+            width: 100%;
+            padding: 0.5rem;
+            // outline: 1px dashed rgb(8, 163, 91);
+
+            transition: color 0.5s cubic-bezier(0.645,0.045,0.355,1);
+
+            &:hover svg{
+                animation: fill 0.3s ease-out forwards;
+            }
+
+            svg {
+                position: relative;
+                @include z-index(sky);
+                width: 24px;
+                fill: #a8b2d1;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+        }
+    }
+
+}
