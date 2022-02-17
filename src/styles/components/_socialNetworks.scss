@@ -21,9 +21,18 @@
         left: 94%;
         bottom: -1.5rem;
 
-        width: auto;     
+        width: auto;
+        
+        transition: color 1s ease-in-out forwards;
+        
+        
+        &:hover a {
+            transition: color 0.3s ease-in-out forwards;
+            animation: scale 0.3s ease-in-out forwards; 
 
+        }
 
+ 
         @include mq(medium) {
             display: initial;
         }
@@ -37,6 +46,9 @@
             text-align: center;
             letter-spacing: 0.05em;
             color: color(secondary, neutral);
+
+            transition: color 1s ease-in-out forwards;
+     
         }
 
 
@@ -129,6 +141,14 @@
     to {
         fill: color(primary, neutral);
         transform: translateY(-0.3rem) scale(1.2);
+    }
+}
+
+
+@keyframes scale {
+    to {
+        color: color(primary, neutral);
+        transform: translateY(-0.3rem) scale(1.05);
     }
 }
 
