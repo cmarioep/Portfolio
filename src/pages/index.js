@@ -1,6 +1,7 @@
 import * as React from "react";
 
 
+import RandomStarsBackground from "../components/RandomStarsBackground";
 import About from "../sections/About";
 import Skills from "../sections/Skills";
 import Projects from "../sections/Projects";
@@ -18,6 +19,7 @@ const IndexPage = () => {
 
   return (
     <main>
+      <RandomStarsBackground/>
       <About/>
       <Skills/>
       <Projects/>

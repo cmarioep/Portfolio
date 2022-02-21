@@ -1,0 +1,103 @@
+@use '../utils/' as *;
+
+
+// Function for random multiple box shadows to make the stars
+// Original code by Vinicius Ferreira
+// https://codepen.io/Suburbanno
+@function multiple-box-shadow ($n, $color) {
+
+    $value: '#{random(2000)}px #{random(20000)}px #{$color}';
+
+    @for $i from 2 through $n {
+        $value: '#{$value} , #{random(2000)}px #{random(2000)}px #{$color}'
+    }
+  
+    @return unquote($value)
+}
+
+
+$shadows-small:  multiple-box-shadow(700, #64FFDA);
+$shadows-medium: multiple-box-shadow(350, #8892b0);
+$shadows-big:    multiple-box-shadow(170, #8892b0);
+
+
+.randomStarsBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include z-index(everest);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: color(dark, dark);
+};
+
+    
+.group_1 {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: starsAnimation 500s linear infinite;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadows-small;
+    }
+}
+
+    
+.group_2 {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: starsAnimation 300s linear infinite;
+      
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadows-medium;
+    }
+}
+
+    
+.group_3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: starsAnimation 200s linear infinite;
+      
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 2.5px;
+        height: 2.5px;
+        background: transparent;
+        box-shadow: $shadows-big;
+    }
+}
+
+    
+@keyframes starsAnimation {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }	
+}
