@@ -13,6 +13,10 @@
     }
 
     &__subTitle {
+        margin: 0;
+        
+        text-align: left;
+        line-height: 1.1;
         @include font-size(medium);
         color: color(secondary, neutral);
     }

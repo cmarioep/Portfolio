@@ -9,7 +9,7 @@ import '../styles/components/_hero.scss';
 
 export default function Hero() {
     return (
-        <section className="ly-viewport">
+        <section className="ly-viewport ly-contentStart">
 
             <figure className="astronaut rellax" data-rellax-speed="-4">
                 <StaticImage className="astronaut__image" src="../images/mission_hero-2.png" alt="" />
