@@ -1,5 +1,9 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
+
+// Rellax is vanilla javascript parallax library.
+import Rellax from 'rellax';
 
 
 // styles
@@ -8,6 +12,13 @@ import '../styles/components/_hero.scss';
 
 
 export default function Hero() {
+
+    useEffect(() => {
+        // Accepts any className
+        new Rellax('.rellax');
+    });
+
+
     return (
         <section className="ly-viewport ly-contentStart">
 
