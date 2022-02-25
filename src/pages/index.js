@@ -2,6 +2,7 @@ import * as React from "react";
 
 
 // import RandomStarsBackground from "../components/RandomStarsBackground";
+import NavBar from "../components/NavBar";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Skills from "../sections/Skills";
@@ -21,6 +22,7 @@ const IndexPage = () => {
   return (
     <main>
       {/* <RandomStarsBackground/> */}
+      <NavBar/>
       <Hero/>
       <About/>
       <Skills/>
