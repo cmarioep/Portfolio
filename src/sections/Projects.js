@@ -35,7 +35,7 @@ export default function Projects(props) {
 
       <GradientTitle title="Projects" />
 
-      <div className="ly-blockFlow alternatedCardsFlow">
+      <div className="ly-blockFlow">
         <BigCard
           title={projects[0].title}
           description={projects[0].description}

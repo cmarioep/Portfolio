@@ -4,7 +4,7 @@
 .hero {
     @include z-index(orbit);
     width: 100%;
-    margin-top: 10%;
+    margin-top: 10vh;
     // outline: 1px solid yellow;
 
     &__title {
