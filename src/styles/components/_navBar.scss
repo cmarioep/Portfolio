@@ -11,11 +11,32 @@
     width: 100%;
     height: 10vh;
 
+    background-color: color(dark, dark);
     // border: 1px solid red;
 
     
     @include mq (intermediate) {
         background-color: unset;
+    }
+
+
+    &__filter {
+        position: absolute;
+        top: 100%;
+        @include z-index(orbit);
+
+        display: none;
+
+        width: 100%;
+        height: 90vh;
+
+        background-color: rgba(20,20,31,0.2);
+        backdrop-filter: blur(3px);
+
+        overscroll-behavior-y: contain;
+        overflow-y: auto;
+
+        transition: display 0.1s ease-in-out;
     }
 
 
@@ -27,17 +48,17 @@
         display: flex;
         flex-direction: column;
 
-        width: 100%;
+        width: 70%;
         height: 90vh;
         padding-top: 10vh;
 
-        background-color: color(dark, dark);
+        background-color: color(dark, neutral);
         overscroll-behavior-y: contain;
         overflow-y: auto;
 
         transition: transform 0.5s ease-in-out;
         transform: translateX(100%);
-
+        
 
         @include mq(intermediate) {
             position: unset;
@@ -170,9 +191,11 @@
 }
 
 
-#menu__button:checked ~ .navBar__menu {
-    background-color: color(dark, dark);
+#menu__button:checked ~ .navBar__filter {
+    display: initial;
+}
 
+#menu__button:checked ~ .navBar__menu {
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }

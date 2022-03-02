@@ -1,7 +1,7 @@
 import * as React from "react";
 
 
-// import RandomStarsBackground from "../components/RandomStarsBackground";
+import RandomStarsBackground from "../components/RandomStarsBackground";
 import NavBar from "../components/NavBar";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
@@ -21,7 +21,7 @@ const IndexPage = () => {
 
   return (
     <main>
-      {/* <RandomStarsBackground/> */}
+      <RandomStarsBackground/>
       <NavBar/>
       <Hero/>
       <About/>

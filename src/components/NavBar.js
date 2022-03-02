@@ -16,7 +16,9 @@ export default function NavBar() {
             
             <input className="navBar__button" id="menu__button" type="checkbox"/>
 
-
+            <div className='navBar__filter'/>
+            
+                
             <ul className="navBar__menu">
                 <li><a href="www.google.com" className="navBar__menu__link" data-text="About">About</a></li>
                 <li><a href="www.google.com" className="navBar__menu__link" data-text="Skills">Skills</a></li>
