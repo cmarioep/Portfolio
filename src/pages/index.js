@@ -3,7 +3,7 @@ import * as React from "react";
 
 import RandomStarsBackground from "../components/RandomStarsBackground";
 import NavBar from "../components/NavBar";
-import BottomNavBar from "../components/BottomNavBar";
+import TapBar from "../components/TapBar";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Skills from "../sections/Skills";
@@ -24,7 +24,7 @@ const IndexPage = () => {
     <main>
       <RandomStarsBackground/>
       <NavBar/>
-      <BottomNavBar/>
+      <TapBar/>
       <Hero/>
       <About/>
       <Skills/>
