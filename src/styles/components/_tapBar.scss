@@ -10,6 +10,11 @@
     height: 8vh;
 
 
+    @include mq(medium) {
+        display: none;
+    }
+
+
 }
 
 
