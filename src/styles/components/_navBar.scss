@@ -15,7 +15,7 @@
     // border: 1px solid red;
 
     
-    @include mq (intermediate) {
+    @include mq (medium) {
         background-color: unset;
     }
 
@@ -60,7 +60,7 @@
         transform: translateX(100%);
         
 
-        @include mq(intermediate) {
+        @include mq(medium) {
             position: unset;
 
             flex-direction: row;
@@ -161,7 +161,7 @@
         background-color: color(dark, dark);
 
 
-        @include mq (intermediate) {
+        @include mq (medium) {
             display: none;
         }
 
