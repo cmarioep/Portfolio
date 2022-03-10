@@ -1,7 +1,7 @@
 import React from 'react';
 
 // icons
-// import MenuIcon from './icons/MenuIcon';
+import MenuIcon from './icons/MenuIcon';
 import CloseIcon from './icons/CloseIcon';
 
 // style
@@ -15,7 +15,8 @@ export default function NavBar() {
             <input className="navBar__button" id="menu__button" type="checkbox"/>
 
             <label className="navBar__icon" htmlFor="menu__button">
-                <CloseIcon />
+                <MenuIcon className="navBar__icon--menu" />
+                <CloseIcon className="navBar__icon--close" />
             </label>
             
 
