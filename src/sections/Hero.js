@@ -23,11 +23,11 @@ export default function Hero() {
         <section className="ly-viewport ly-contentStart">
 
             <figure className="astronaut rellax" data-rellax-speed="-4">
-                <StaticImage className="astronaut__image" src="../images/mission_hero-2.png" alt="" />
+                <StaticImage className="astronaut__image" src="../images/astronaut.png" alt="" />
             </figure>
 
             <figure className="montains rellax" data-rellax-speed="0">
-                <StaticImage className="montains__image" src="../images/picker-2-100-2.png" alt="" />
+                <StaticImage className="montains__image" src="../images/rock_mountains.png" alt="" />
             </figure>
 
             <div className="ly-blockFlow">
