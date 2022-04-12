@@ -34,9 +34,11 @@
         padding: 1rem;
         overflow: hidden;
 
+
         @include mq(large) {
             padding-top: 0rem;
         }
+
 
     }
 
@@ -46,11 +48,11 @@
     }
 
 
-    &viewportGap {
+    &gap {
         margin-bottom: 10vh;
 
         @include mq(xlarge) {
-            margin-bottom: 20vh;
+            margin-bottom: 50vh;
         }
     }
 

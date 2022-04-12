@@ -18,7 +18,7 @@ export default function Skills() {
 
 
   return (
-    <section className='ly-viewport'>
+    <section className='ly-viewport ly-gap'>
 
       <GradientTitle title="Skills" />
 

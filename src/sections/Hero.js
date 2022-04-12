@@ -20,7 +20,7 @@ export default function Hero() {
 
 
     return (
-        <section className="ly-viewport ly-contentStart">
+        <section className="ly-viewport ly-contentStart ly-gap">
 
             <figure className="astronaut rellax" data-rellax-speed="-4">
                 <StaticImage className="astronaut__image" src="../images/astronaut.png" alt="" />
@@ -40,6 +40,7 @@ export default function Hero() {
                     <a className="button" href="mailto:cmescandonpardo@gmail.com">Ping me!</a>
                 </div>
             </div>
+            
 
         </section>
     );
