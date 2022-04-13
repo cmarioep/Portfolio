@@ -22,7 +22,7 @@ export default function About() {
           </div>
                 
           <div className="description__picture">
-            <StaticImage src="../images/astronaut_head.png" alt="My Picture"/>
+            <StaticImage src="../images/avatar.png" alt="My Picture"/>
           </div>
         </div>
 

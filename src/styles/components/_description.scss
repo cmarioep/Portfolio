@@ -2,7 +2,6 @@
 
 
 .description {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -76,14 +75,16 @@
 
 
     &__picture {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
+
+        animation: floating 5s ease-in-out infinite;
 
 
         img {
             width: 100%;
-            border-radius: 50%;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
         }
 
     }
@@ -92,9 +93,7 @@
         width: 400px;
         height: 400px;
         margin: 1rem auto;
-        // overflow: hidden;
 
-        // outline: 1px solid #d6922b;
 
         /* styles for the 3D tagcloud */
         & .tagcloud--item {
@@ -112,3 +111,9 @@
     
 }
 
+@keyframes floating {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-20px);}
+    10% { transform: translateY(0px);}
+
+}
