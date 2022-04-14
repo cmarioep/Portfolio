@@ -102,6 +102,9 @@
 
         & .tagcloud--item:hover {
             color: #64FFDA;
+            text-shadow: 0 0 10px color(primary, neutral), 
+            0 0 30px color(primary, neutral),
+            0 0 80px color(primary, neutral);
         }
 
         @include mq(large) {
