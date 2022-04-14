@@ -78,7 +78,7 @@
         width: 350px;
         height: 350px;
 
-        animation: floating 5s ease-in-out infinite;
+        animation: floating 15s ease-in-out infinite;
 
 
         img {
@@ -116,7 +116,7 @@
 
 @keyframes floating {
     0% { transform: translateY(0px);}
-    50% { transform: translateY(-20px);}
-    10% { transform: translateY(0px);}
+    50% { transform: translateY(-10%) rotate(10deg);}
+    10% { transform: translateY(0px) rotate(0deg);}
 
 }
