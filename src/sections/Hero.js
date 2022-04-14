@@ -34,9 +34,9 @@ export default function Hero() {
                 <div className="hero rellax" data-rellax-speed="8">
                     <h1 className="hero__title">Hi,<br />I'm Mario.</h1>
                     <h2 className="hero__subTitle">I love building things for the web</h2>
-                    TODO: Animation title
+                    {/* TODO: Animation title
                     exceptional digital experiences
-                    usable and accessible products
+                    usable and accessible products */}
                     <a className="button" href="mailto:cmescandonpardo@gmail.com">Ping me!</a>
                 </div>
             </div>
