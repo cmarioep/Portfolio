@@ -37,7 +37,6 @@ export default function Hero() {
                     {/* TODO: Animation title
                     exceptional digital experiences
                     usable and accessible products */}
-                    <a className="button" href="mailto:cmescandonpardo@gmail.com">Ping me!</a>
                 </div>
             </div>
             
