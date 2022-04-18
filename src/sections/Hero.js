@@ -2,9 +2,10 @@ import React from 'react';
 import { useEffect } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 
+import ScrollDownIndicator from '../components/ScrollDownIndicator';
+
 // Rellax is vanilla javascript parallax library.
 import Rellax from 'rellax';
-
 
 // styles
 import '../styles/layout/_layout.scss';
@@ -37,8 +38,10 @@ export default function Hero() {
                     {/* TODO: Animation title
                     exceptional digital experiences
                     usable and accessible products */}
+
                 </div>
             </div>
+                    <ScrollDownIndicator/>
             
 
         </section>
