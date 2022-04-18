@@ -47,7 +47,7 @@ export default function BigCard(props) {
             </div>
 
             <a className="bigCard__screenshot" href="www.google.com" target="_blank" rel="noreferrer">
-                <StaticImage className="bigCard__screenshot__image" src="../images/temp_background.jpg" alt="Preview screenshot project" />
+                <StaticImage className="bigCard__screenshot__image" src="../images/temp_background.webp" alt="Preview screenshot project" />
             </a>
 
 
