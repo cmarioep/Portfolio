@@ -12,12 +12,19 @@
         top: 75%;
     }
 
+
     &__text {
         display: block;
         color: color(primary, neutral);
-        font-size: 12px;
-        transform: translate(-50%, 60px);    
+
+        @include font-size(small);
+
+        transform: translate(-50%, 60px);
+        
+        animation-delay: -0.4s;
+        animation: pulse 2s infinite both;
     }
+
 
     &__arrow {
         span {
@@ -56,5 +63,21 @@
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 50px);
+      }
+      50% {
+        opacity: 1;
+        transform: translate(-50%, 60px) scale(1.05);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, 50px);
+      }
 }
 
