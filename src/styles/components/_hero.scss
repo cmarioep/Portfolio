@@ -84,3 +84,11 @@
     }
 
 }
+
+
+.rubber-title {
+
+    :nth-child(n) {
+        @include font-size(large);
+    }
+}

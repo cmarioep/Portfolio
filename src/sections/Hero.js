@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { StaticImage } from "gatsby-plugin-image";
+import charAnimation from '../../node_modules/char-animation/dist/char-animation';
 
 import ScrollDownIndicator from '../components/ScrollDownIndicator';
 
@@ -17,6 +18,12 @@ export default function Hero() {
     useEffect(() => {
         // Accepts any className
         new Rellax('.rellax');
+        charAnimation(
+            {
+                selector: ".rubber-title", 
+                animation: "rubberBand"      
+            }
+        );
     });
 
 
@@ -33,7 +40,7 @@ export default function Hero() {
 
             <div className="ly-blockFlow">
                 <div className="hero rellax" data-rellax-speed="8">
-                    <h1 className="hero__title">Hi,<br />I'm Mario.</h1>
+                    <h1 className="hero__title rubber-title">Hi,<br />I'm Mario.</h1>
                     <h2 className="hero__subTitle">I love building things for the web</h2>
                     {/* TODO: Animation title
                     exceptional digital experiences
