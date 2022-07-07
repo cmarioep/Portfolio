@@ -18,7 +18,7 @@
         margin: 0;
         
         text-align: left;
-        line-height: 1.1;
+        line-height: 1.4;
         @include font-size(medium);
         color: color(secondary, neutral);
     }
@@ -86,9 +86,10 @@
 }
 
 
-.rubber-title {
+.animated-title {
 
     :nth-child(n) {
-        @include font-size(large);
+        font-size: inherit;
+        font-weight: bold;
     }
 }

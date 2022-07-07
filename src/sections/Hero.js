@@ -20,7 +20,7 @@ export default function Hero() {
         new Rellax('.rellax');
         charAnimation(
             {
-                selector: ".rubber-title", 
+                selector: ".animated-title", 
                 animation: "rubberBand"      
             }
         );
@@ -40,7 +40,8 @@ export default function Hero() {
 
             <div className="ly-blockFlow">
                 <div className="hero rellax" data-rellax-speed="8">
-                    <h1 className="hero__title rubber-title">Hi,<br />I'm Mario.</h1>
+                    <span className="hero__title animated-title">Hi,</span>
+                    <h1 className="hero__title animated-title">I'm Mario.</h1>
                     <h2 className="hero__subTitle">I love building things for the web</h2>
                     {/* TODO: Animation title
                     exceptional digital experiences
