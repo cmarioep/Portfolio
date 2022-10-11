@@ -1,31 +1,32 @@
 {
-  "name": "my-gatsby-porfolio",
+  "name": "new",
   "version": "1.0.0",
   "private": true,
-  "description": "My Gatsby Porfolio",
+  "description": "new",
   "author": "cmarioep",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "char-animation": "^1.1.1",
-    "gatsby": "^4.6.2",
-    "gatsby-plugin-image": "^2.7.0",
-    "gatsby-plugin-sass": "^5.6.0",
-    "gatsby-plugin-sharp": "^4.7.0",
-    "gatsby-source-filesystem": "^4.7.0",
-    "gatsby-transformer-sharp": "^4.7.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "char-animation": "^1.1.2",
+    "gatsby": "^4.24.4",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-plugin-sitemap": "^5.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "rellax": "^1.12.1",
-    "sass": "^1.49.7",
+    "sass": "^1.55.0",
     "TagCloud": "^2.2.0"
   }
 }
