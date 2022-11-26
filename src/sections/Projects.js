@@ -31,7 +31,7 @@ export default function Projects(props) {
 
 
   return (
-    <section className='ly-viewport ly-gap'>
+    <section id="projects" className='ly-viewport ly-gap'>
 
       <GradientTitle title="Projects" />
 

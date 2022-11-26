@@ -24,10 +24,10 @@ export default function NavBar() {
             
                 
             <ul className="navBar__menu">
-                <li><a href="www.google.com" className="navBar__menu__link" data-text="About">About</a></li>
-                <li><a href="www.google.com" className="navBar__menu__link" data-text="Skills">Skills</a></li>
-                <li><a href="www.google.com" className="navBar__menu__link" data-text="Projects">Projects</a></li>
-                <li><a href="www.google.com" className="navBar__menu__link" data-text="Contact">Contact</a></li>
+                <li><a href="#about" className="navBar__menu__link" data-text="About">About</a></li>
+                <li><a href="#skills" className="navBar__menu__link" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" className="navBar__menu__link" data-text="Projects">Projects</a></li>
+                <li><a href="#contact" className="navBar__menu__link" data-text="Contact">Contact</a></li>
             </ul>
 
         </nav>

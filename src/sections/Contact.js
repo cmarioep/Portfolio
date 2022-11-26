@@ -10,7 +10,7 @@ import '../styles/components/_contact.scss';
 
 export default function Contact() {
   return (
-    <section className='ly-viewport'>
+    <section id="contact" className='ly-viewport'>
 
         <GradientTitle title="Ping me"/>
 

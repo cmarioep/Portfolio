@@ -10,7 +10,7 @@ import '../styles/components/_description.scss';
 
 export default function About() {
   return (
-    <section className='ly-viewport ly-gap'>
+    <section id="about" className='ly-viewport ly-gap'>
 
         <GradientTitle title="About"/>
 

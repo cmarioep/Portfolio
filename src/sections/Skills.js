@@ -14,11 +14,11 @@ export default function Skills() {
 
   useEffect(() => {
     TagCloud('.description__tagCloud', tags, options);
-  });
+  }, []);
 
 
   return (
-    <section className='ly-viewport ly-gap'>
+    <section id="skills" className='ly-viewport ly-gap'>
 
       <GradientTitle title="Skills" />
 
