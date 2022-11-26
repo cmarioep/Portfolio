@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from 'react';
+import React, { useEffect } from 'react';
 
 // icons
 import AboutIcon from '../components/icons/AboutIcon';
@@ -11,9 +12,40 @@ import '../styles/components/_tapBar.scss';
 
 
 
+
 export default function BottomNavBar() {
+
+    const [isHide, setIsHide] = useState(false);
+
+    let lastPageYOffset = 0;
+
+    const onScrollHandler = () => {
+
+        let currentPageYOffset = window.pageYOffset;
+
+        if (currentPageYOffset > lastPageYOffset) {
+            setIsHide(true);
+        } else {
+            setIsHide(false);
+        }
+
+        lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
+
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', onScrollHandler);
+
+        return () => {
+            window.removeEventListener('scroll', onScrollHandler)
+        }
+
+    }, [])
+
+
     return (
-        <nav className="tapBar">
+        <nav className={`tapBar ${isHide && 'tapBar--hide'}`} >
 
             <ul className="taps">
 
@@ -44,7 +76,7 @@ export default function BottomNavBar() {
                 </li>
 
             </ul>
-            
+
         </nav>
     );
 }

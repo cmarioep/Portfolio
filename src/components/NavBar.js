@@ -15,21 +15,23 @@ export default function NavBar() {
     const [opacity, setOpacity] = useState(false);
 
 
-    const onScrollDown = () => {
+    const onScrollDownHandler = () => {
 
         if (window.scrollY > 100) {
-            setOpacity(true)
+            setOpacity(true);
         } else {
-            setOpacity(false)            
+            setOpacity(false);
         }
     }
 
 
     useEffect(() => {
-        window.addEventListener('scroll', onScrollDown)
+        window.addEventListener('scroll', onScrollDownHandler);
+
         return () => {
-            window.removeEventListener('scroll', onScrollDown)
+            window.removeEventListener('scroll', onScrollDownHandler);
         }
+
     }, [])
 
 

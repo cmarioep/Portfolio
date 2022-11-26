@@ -9,6 +9,13 @@
     width: 100%;
     height: 8vh;
 
+    background-color: hsla(240, 33%, 2%, 0.8);
+
+
+    &--hide {
+        display: none;
+    }
+    
 
     @include mq(medium) {
         display: none;
@@ -23,10 +30,10 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    
+
     width: 100%;
     height: inherit;
-    
+
     // border: 1px solid greenyellow;
 }
 
@@ -38,7 +45,7 @@
 
     font-size: medium;
     color: color(secondaty, neutral);
-    
+
     // border: 1px solid blue;
 
     &__links {
@@ -74,6 +81,5 @@
             stroke-linejoin: round;
         }
     }
-    
-}
 
+}
