@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 // icons
 import MenuIcon from './icons/MenuIcon';
@@ -9,20 +11,42 @@ import '../styles/components/_navBar.scss';
 
 
 export default function NavBar() {
-    return (
-        <nav className="navBar">
 
-            <input className="navBar__button" id="menu__button" type="checkbox"/>
+    const [opacity, setOpacity] = useState(false);
+
+
+    const onScrollDown = () => {
+
+        if (window.scrollY > 100) {
+            setOpacity(true)
+        } else {
+            setOpacity(false)            
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', onScrollDown)
+        return () => {
+            window.removeEventListener('scroll', onScrollDown)
+        }
+    }, [])
+
+
+    return (
+        <nav className={`navBar ${opacity && 'navBar--opacity'}`}>
+
+            <input className="navBar__button" id="menu__button" type="checkbox" />
 
             <label className="navBar__icon" htmlFor="menu__button">
                 <MenuIcon className="navBar__icon--menu" />
                 <CloseIcon className="navBar__icon--close" />
             </label>
-            
 
-            <div className='navBar__filter'/>
-            
-                
+
+            <div className='navBar__filter' />
+
+
             <ul className="navBar__menu">
                 <li><a href="#about" className="navBar__menu__link" data-text="About">About</a></li>
                 <li><a href="#skills" className="navBar__menu__link" data-text="Skills">Skills</a></li>
