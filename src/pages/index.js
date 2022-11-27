@@ -1,6 +1,5 @@
 import * as React from "react";
 
-
 import RandomStarsBackground from "../components/RandomStarsBackground";
 import NavBar from "../components/NavBar";
 import TapBar from "../components/TapBar";
@@ -16,9 +15,9 @@ import AsideEmail from "../components/AsideEmail";
 // styles
 import '../styles/index.scss'
 
-
 // markup
-const IndexPage = () => {
+const IndexPage = ({data}) => {
+
 
   return (
     <main>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticImage } from "gatsby-plugin-image";
 
 // icons
 import GitIcon from './icons/GitIcon';
@@ -7,9 +6,10 @@ import LinkToProject from './icons/LinkToProject';
 
 // styles
 import '../styles/components/_cards.scss';
+import ProjectScreenshot from './ProjectScreenshot';
 
 
-export default function BigCard({ title, screenshot, description, repository, link }) {
+export default function BigCard({ id, title, description, repository, link }) {
 
 
     return (
@@ -47,8 +47,8 @@ export default function BigCard({ title, screenshot, description, repository, li
 
             </div>
 
-            <a className="bigCard__screenshot" href={link} target="_blank" rel="noreferrer">
-                <StaticImage className="bigCard__screenshot__image" src="../images/Project-1.png" alt="noreferrer" />
+            <a className="bigCard__screenshot" href={link} target="_blank" rel="noreferrer"> 
+                <ProjectScreenshot image={id}/>
             </a>
 
 
