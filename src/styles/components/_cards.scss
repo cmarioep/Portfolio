@@ -32,7 +32,7 @@
 
     &__content {
         position: relative;
-        
+
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -45,7 +45,7 @@
 
         background-color: color(dark, neutral);
 
-        
+
         @include mq (intermediate) {
             width: 100%;
             height: 100%;
@@ -71,7 +71,7 @@
         &__title {
             @include font-size(intermediate);
             color: color(primary, dark);
-            
+
             @include mq(standar) {
                 @include font-size(medium);
             }
@@ -97,7 +97,7 @@
             @include mq (standar) {
                 @include font-size(standar);
             }
-            
+
 
             @include mq (medium) {
                 margin: 0.3rem 0;
@@ -115,7 +115,7 @@
 
         }
 
-        &__skills, 
+        &__skills,
         &__links {
             display: flex;
             margin-top: 0.5rem;
@@ -126,7 +126,7 @@
             }
 
 
-            
+
             li {
                 margin-right: 1rem;
                 color: color(primary, dark);
@@ -138,14 +138,14 @@
 
                 width: 100%;
                 padding: 0.5rem;
-    
-                transition: color 0.5s cubic-bezier(0.645,0.045,0.355,1);
-    
 
-                &:hover svg{
+                transition: color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+
+                &:hover svg {
                     animation: fill 0.3s ease-out forwards;
                 }
-    
+
 
                 svg {
                     position: relative;
@@ -158,7 +158,7 @@
                     stroke-linejoin: round;
                 }
             }
-  
+
         }
 
 
@@ -181,7 +181,7 @@
 
         @include mq (medium) {
             display: initial;
-            width: 60%;
+            width: 65%;
         }
 
 
@@ -196,7 +196,7 @@
 
             background-color: color(primary, dark);
             mix-blend-mode: color;
-            transition: background-color 0.5s cubic-bezier(0.645,0.045,0.355,1);
+            transition: background-color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
 
         &:hover::before {
@@ -222,25 +222,26 @@
         .bigCard__content {
 
             right: -50%;
-    
 
-            h3, 
-            ul{
+
+            h3,
+            ul {
                 align-self: flex-end;
             }
 
-        
-            &__skills, &__links {
-    
+
+            &__skills,
+            &__links {
+
                 @include mq (large) {
                     margin-top: 1rem;
                 }
-    
+
 
                 li {
                     margin-right: 0;
                     margin-right: 0.5rem;
-        
+
                     @include mq (large) {
                         margin-right: 1rem;
                     }
@@ -260,12 +261,12 @@
                 text-align: right;
             }
         }
-    
+
 
         .bigCard__screenshot {
             left: 0;
         }
-    
+
     }
 }
 
@@ -284,14 +285,14 @@
 
     background-color: color(dark, neutral);
 
-    transition: transform 0.5s cubic-bezier(0.645,0.045,0.355,1);
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
     &:hover {
         animation: slideUp 0.3s ease-out forwards;
     }
 
-     
+
     @include mq(intermediate) {
         width: 45%;
     }
@@ -345,7 +346,8 @@
     }
 
 
-    &__skills, &__links {
+    &__skills,
+    &__links {
         display: flex;
         // outline: 1px dashed rgb(212, 130, 53);
 
@@ -367,9 +369,9 @@
             padding: 0.5rem;
             // outline: 1px dashed rgb(8, 163, 91);
 
-            transition: color 0.5s cubic-bezier(0.645,0.045,0.355,1);
+            transition: color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-            &:hover svg{
+            &:hover svg {
                 animation: fill 0.3s ease-out forwards;
             }
 

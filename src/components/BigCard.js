@@ -9,7 +9,8 @@ import LinkToProject from './icons/LinkToProject';
 import '../styles/components/_cards.scss';
 
 
-export default function BigCard(props) {
+export default function BigCard({ title, screenshot, description, repository, link }) {
+
 
     return (
 
@@ -17,9 +18,9 @@ export default function BigCard(props) {
 
             <div className="bigCard__content">
 
-                <h3 className="bigCard__content__title">{props.title}</h3>
+                <h3 className="bigCard__content__title">{title}</h3>
 
-                <p className="bigCard__content__details">{props.description}</p>
+                <p className="bigCard__content__details">{description}</p>
 
                 <ul className="bigCard__content__skills">
                     <li>Skill 1</li>
@@ -31,13 +32,13 @@ export default function BigCard(props) {
 
                 <ul className="bigCard__content__links">
                     <li>
-                        <a className="bigCard__content__links__repository" href="www.google.com" target="_blank" rel="noreferrer">
+                        <a className="bigCard__content__links__repository" href={repository} target="_blank" rel="noreferrer">
                             <GitIcon />
                         </a>
                     </li>
 
                     <li>
-                        <a className="bigCard__content__links__repository" href="www.google.com" target="_blank" rel="noreferrer">
+                        <a className="bigCard__content__links__repository" href={link} target="_blank" rel="noreferrer">
                             <LinkToProject />
                         </a>
                     </li>
@@ -46,8 +47,8 @@ export default function BigCard(props) {
 
             </div>
 
-            <a className="bigCard__screenshot" href="www.google.com" target="_blank" rel="noreferrer">
-                <StaticImage className="bigCard__screenshot__image" src="../images/temp_background.webp" alt="Preview screenshot project" />
+            <a className="bigCard__screenshot" href={link} target="_blank" rel="noreferrer">
+                <StaticImage className="bigCard__screenshot__image" src="../images/Project-1.png" alt="noreferrer" />
             </a>
 
 
