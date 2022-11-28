@@ -15,8 +15,17 @@ export const useOnScrollHandler = () => {
 
             if (currentPageYOffset > lastPageYOffset) {
                 setIsHide(true);
+                
+                setTimeout(() => { 
+                    setIsHide(false) 
+                }, 3000)
+
             } else {
-                setIsHide(false);
+                setIsHide(true);
+
+                setTimeout(() => { 
+                    setIsHide(false) 
+                }, 3000)
             }
 
             lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
@@ -30,7 +39,7 @@ export const useOnScrollHandler = () => {
         }
 
     }, [])
-    
+
 
     return {
         isHide

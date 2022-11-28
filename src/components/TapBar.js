@@ -17,7 +17,7 @@ export default function BottomNavBar() {
 
 
     return (
-        <nav className={`tapBar ${isHide && 'tapBar--hide'}`} >
+        <nav className={`tapBar ${isHide && 'tapBar--show'}`} >
 
             <ul className="taps">
 
