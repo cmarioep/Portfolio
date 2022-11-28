@@ -36,7 +36,8 @@
 
 
         @include mq(large) {
-            padding-top: 0rem;
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
 
@@ -52,7 +53,7 @@
         margin-bottom: 10vh;
 
         @include mq(xlarge) {
-            margin-bottom: 50vh;
+            margin-bottom: 30vh;
         }
     }
 
