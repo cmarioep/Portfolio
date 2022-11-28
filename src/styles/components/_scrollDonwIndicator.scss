@@ -2,11 +2,11 @@
 
 .scroll-down-indicator {
     position: absolute;
-    top: 85%;
-    left: 50%;
+    top: 80%;
+    left: 55%;
     @include z-index(orbit);
 
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -50%);
 
     @include mq(large) {
         top: 75%;
