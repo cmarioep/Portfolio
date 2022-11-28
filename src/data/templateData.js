@@ -24,3 +24,28 @@ export const projects = [
       link: 'https://cmarioep.github.io/ROD-Consulting/',
     }
   ]
+
+
+  export const otherProjects = [
+    {
+      title: 'char-animation',
+      description: 'Split strings text into single chars and applies animations to each one when the cursor passes over them.',
+      skills: ['ES+6', 'Babel', 'npm package'],
+      repository: 'https://github.com/cmarioep/char-animation',
+      link: 'https://www.npmjs.com/package/char-animation',
+    },
+    {
+      title: 'SoftAP-Manager',
+      description: 'software-enabled access point for ESP boards; allows you to configure Wifi credentials and saves them in EEPROM memory.',
+      skills: ['Arduino', 'C++', 'API REST'],
+      repository: 'https://github.com/cmarioep/SoftAP-EEPROM-Manager',
+      link: 'https://github.com/cmarioep/SoftAP-EEPROM-Manager',
+    },
+    {
+      title: 'ESP32CAM-WS',
+      description: 'Video streaming server with Node.js and WebSocket for ESP32-CAM.',
+      skills: ['Arduino', 'C++', 'Node', 'Websockets'],
+      repository: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
+      link: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
+    }
+  ]

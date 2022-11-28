@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { projects } from '../data/templateData';
+import { projects, otherProjects } from '../data/templateData';
 
 import GradientTitle from "../components/GradientTitle";
 import BigCard from "../components/BigCard";
@@ -45,9 +45,16 @@ export default function Projects() {
       <h2>Other Noteworthy Projects</h2>
 
       <div className="ly-inlineFlow">
-        <SmallCard />
-        <SmallCard />
-        <SmallCard />
+
+        {
+          otherProjects.map(otherProject =>
+            <SmallCard
+              key={Math.random() * 10}
+              {...otherProject}
+            />
+          )
+        }
+        
       </div>
 
     </section>
