@@ -11,8 +11,9 @@
     width: 100%;
     height: 10vh;
 
-    background-color: color(dark, dark);
+    // background-color:  hsla(240, 33%, 2%, 0.8);
     // border: 1px solid red;
+    background-color: unset;
 
 
     @include mq (medium) {
@@ -33,7 +34,7 @@
         display: none;
 
         width: 100%;
-        height: 90vh;
+        height: 100vh;
 
         background-color: rgba(20, 20, 31, 0.2);
         backdrop-filter: blur(3px);
@@ -54,8 +55,9 @@
         flex-direction: column;
 
         width: 70%;
-        height: 90vh;
-        padding-top: 10vh;
+        height: 100vh;
+        // padding-top: 10vh;
+        overflow: hidden;
 
         background-color: color(dark, neutral);
         overscroll-behavior-y: contain;
@@ -71,7 +73,7 @@
             flex-direction: row;
 
             width: unset;
-            height: 10vh;
+            height: 10.5vh;
             margin-right: 6rem;
             padding: 0;
 
@@ -164,7 +166,7 @@
         padding: 1rem;
 
 
-        background-color: color(dark, dark);
+        background-color:  hsla(240, 33%, 2%, 0.8);
 
 
         @include mq (medium) {
