@@ -8,12 +8,15 @@
 
     width: 100%;
     height: $navBar-height;
+    opacity: 0;
 
     background-color: hsla(240, 33%, 2%, 0.8);
+    
+    transition: opacity 0.5s ease-in-out;
 
 
-    &--hide {
-        display: none;
+    &--show {
+        opacity: 1;
     }
 
 
