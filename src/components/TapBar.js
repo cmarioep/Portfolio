@@ -17,31 +17,32 @@ export default function BottomNavBar() {
 
     const [isHide, setIsHide] = useState(false);
 
-    let lastPageYOffset = 0;
-
-    const onScrollHandler = () => {
-
-        let currentPageYOffset = window.pageYOffset;
-
-        if (currentPageYOffset > lastPageYOffset) {
-            setIsHide(true);
-        } else {
-            setIsHide(false);
-        }
-
-        lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
-
-    }
-
 
     useEffect(() => {
+
+        let lastPageYOffset = 0;
+
+        const onScrollHandler = () => {
+
+            let currentPageYOffset = window.pageYOffset;
+
+            if (currentPageYOffset > lastPageYOffset) {
+                setIsHide(true);
+            } else {
+                setIsHide(false);
+            }
+
+            lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
+
+        }
+
         window.addEventListener('scroll', onScrollHandler);
 
         return () => {
             window.removeEventListener('scroll', onScrollHandler)
         }
 
-    })
+    }, [])
 
 
     return (

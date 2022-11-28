@@ -17,7 +17,7 @@ export default function NavBar() {
 
     const onScrollDownHandler = () => {
 
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             setOpacity(true);
         } else {
             setOpacity(false);
