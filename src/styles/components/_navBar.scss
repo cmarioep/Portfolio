@@ -9,11 +9,10 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 10vh;
+    height: $navBar-height;
 
-    // background-color:  hsla(240, 33%, 2%, 0.8);
-    // border: 1px solid red;
-    background-color: unset;
+    background-color:  hsla(240, 33%, 2%, 0.8);
+    opacity: 0;
 
 
     @include mq (medium) {
@@ -22,7 +21,7 @@
 
 
     &--opacity {
-        background-color:  hsla(240, 33%, 2%, 0.8);
+        opacity: 1;
     }
 
 
@@ -34,7 +33,8 @@
         display: none;
 
         width: 100%;
-        height: 100vh;
+        height: 90vh;
+        padding-top: $navBar-height;
 
         background-color: rgba(20, 20, 31, 0.2);
         backdrop-filter: blur(3px);
@@ -55,9 +55,8 @@
         flex-direction: column;
 
         width: 70%;
-        height: 100vh;
-        // padding-top: 10vh;
-        overflow: hidden;
+        height: 90vh;
+        padding-top: $navBar-height;
 
         background-color: color(dark, neutral);
         overscroll-behavior-y: contain;
@@ -116,7 +115,6 @@
 
             &:hover {
                 color: color(dark, light);
-                // color: red;
                 transition-delay: 0s;
             }
 
@@ -164,9 +162,6 @@
 
         height: 10vh;
         padding: 1rem;
-
-
-        background-color:  hsla(240, 33%, 2%, 0.8);
 
 
         @include mq (medium) {
