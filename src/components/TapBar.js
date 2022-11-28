@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 
 // icons
 import AboutIcon from '../components/icons/AboutIcon';
@@ -11,37 +11,9 @@ import MyWorkIcon from '../components/icons/MyWorkIcon';
 import '../styles/components/_tapBar.scss';
 
 
-
-
 export default function BottomNavBar() {
 
-    const [isHide, setIsHide] = useState(false);
-
-    let lastPageYOffset = 0;
-
-    const onScrollHandler = () => {
-
-        let currentPageYOffset = window.pageYOffset;
-
-        if (currentPageYOffset > lastPageYOffset) {
-            setIsHide(true);
-        } else {
-            setIsHide(false);
-        }
-
-        lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
-
-    }
-
-
-    useEffect(() => {
-        window.addEventListener('scroll', onScrollHandler);
-
-        return () => {
-            window.removeEventListener('scroll', onScrollHandler)
-        }
-
-    })
+    const {isHide} = useOnScrollHandler();
 
 
     return (
@@ -50,14 +22,14 @@ export default function BottomNavBar() {
             <ul className="taps">
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#about" >
                         <AboutIcon />
                         <p className='tap__links__label'>About</p>
                     </a>
                 </li>
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#skills" >
                         <SkillsIcon />
                         <p className='tap__links__label'>Skills</p>
                     </a>
@@ -65,7 +37,7 @@ export default function BottomNavBar() {
 
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#projects" >
                         <MyWorkIcon />
                         <p className='tap__links__label'>Projects</p>
                     </a>
@@ -73,7 +45,7 @@ export default function BottomNavBar() {
 
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#contact" >
                         <ContactIcon />
                         <p className='tap__links__label'>Contact</p>
                     </a>

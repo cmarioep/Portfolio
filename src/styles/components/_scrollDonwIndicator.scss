@@ -7,6 +7,11 @@
     @include z-index(orbit);
 
     transform: translate(-25%, -50%);
+    transition: opacity 0.3s ease-in-out;
+
+    &--hide {
+        opacity: 0;
+    }
 
     @include mq(intermediate) {
         left: 50%;
@@ -24,7 +29,7 @@
         @include font-size(small);
 
         transform: translate(-50%, 60px);
-        
+
         animation-delay: -0.4s;
         animation: pulse 2s infinite both;
     }
@@ -33,20 +38,20 @@
     &__arrow {
         span {
             display: block;
-    
+
             width: 20px;
             aspect-ratio: 1/1;
             margin: -10px;
             border-bottom: 1px solid color(primary, neutral);
             border-right: 1px solid color(primary, neutral);
-    
+
             transform: rotate(45deg);
             animation: falling 2s infinite;
-    
+
             &:nth-child(2) {
                 animation-delay: -0.2s;
             }
-    
+
             &:nth-child(3) {
                 animation-delay: -0.4s;
             }
@@ -60,9 +65,11 @@
         opacity: 0;
         transform: rotate(45deg) translate(-20px, -20px);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
@@ -74,14 +81,15 @@
     0% {
         opacity: 0;
         transform: translate(-50%, 50px);
-      }
-      50% {
+    }
+
+    50% {
         opacity: 1;
         transform: translate(-50%, 60px) scale(1.05);
-      }
-      100% {
+    }
+
+    100% {
         opacity: 0;
         transform: translate(-50%, 50px);
-      }
+    }
 }
-
