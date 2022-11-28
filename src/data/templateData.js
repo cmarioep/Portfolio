@@ -5,8 +5,8 @@ export const about = {
 }
 
 
-export const skils = {
-    description: 'Curious learner and excellent team player, confident of my technical competencies, working knowledge, and communication skills to generate high-end solutions on general troubleshooting integrating innovative software solutions.',
+export const skills = {
+    description: 'Curious learner and excellent team player, confident of my technical competencies, working knowledge, and communication skills to generate high-end solutions on general troubleshooting, integrating innovative software solutions.',
     skills: ['Problem solver', 'Self-taught', 'Lifelong learner', 'High attention to details', 'Self-managment', 'Friendly', 'Easy to talk', 'Empathic', 'Common sense', 'Enthusiastic & Optimistic' ]
 }
 
