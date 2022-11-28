@@ -9,7 +9,7 @@ import '../styles/components/_cards.scss';
 import ProjectScreenshot from './ProjectScreenshot';
 
 
-export default function BigCard({ id, title, description, repository, link }) {
+export default function BigCard({ id, title, description, skills, repository, link }) {
 
 
     return (
@@ -23,11 +23,12 @@ export default function BigCard({ id, title, description, repository, link }) {
                 <p className="bigCard__content__details">{description}</p>
 
                 <ul className="bigCard__content__skills">
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                    <li>Skill 4</li>
-                    <li>Skill 5</li>
+                    {
+                        skills.map(skill =>
+                            <li key={Math.random() * 10} >{skill}</li>
+
+                        )
+                    }
                 </ul>
 
                 <ul className="bigCard__content__links">
@@ -47,8 +48,8 @@ export default function BigCard({ id, title, description, repository, link }) {
 
             </div>
 
-            <a className="bigCard__screenshot" href={link} target="_blank" rel="noreferrer"> 
-                <ProjectScreenshot image={id}/>
+            <a className="bigCard__screenshot" href={link} target="_blank" rel="noreferrer">
+                <ProjectScreenshot image={id} />
             </a>
 
 
