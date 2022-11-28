@@ -51,14 +51,14 @@ export default function BottomNavBar() {
             <ul className="taps">
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#about" >
                         <AboutIcon />
                         <p className='tap__links__label'>About</p>
                     </a>
                 </li>
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#skills" >
                         <SkillsIcon />
                         <p className='tap__links__label'>Skills</p>
                     </a>
@@ -66,7 +66,7 @@ export default function BottomNavBar() {
 
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#projects" >
                         <MyWorkIcon />
                         <p className='tap__links__label'>Projects</p>
                     </a>
@@ -74,7 +74,7 @@ export default function BottomNavBar() {
 
 
                 <li className='tap'>
-                    <a className="tap__links" href="www.google.com" >
+                    <a className="tap__links" href="#contact" >
                         <ContactIcon />
                         <p className='tap__links__label'>Contact</p>
                     </a>
