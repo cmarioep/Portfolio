@@ -41,7 +41,7 @@ export default function BottomNavBar() {
             window.removeEventListener('scroll', onScrollHandler)
         }
 
-    }, [])
+    })
 
 
     return (
@@ -52,12 +52,14 @@ export default function BottomNavBar() {
                 <li className='tap'>
                     <a className="tap__links" href="www.google.com" >
                         <AboutIcon />
+                        <p className='tap__links__label'>About</p>
                     </a>
                 </li>
 
                 <li className='tap'>
                     <a className="tap__links" href="www.google.com" >
                         <SkillsIcon />
+                        <p className='tap__links__label'>Skills</p>
                     </a>
                 </li>
 
@@ -65,6 +67,7 @@ export default function BottomNavBar() {
                 <li className='tap'>
                     <a className="tap__links" href="www.google.com" >
                         <MyWorkIcon />
+                        <p className='tap__links__label'>Projects</p>
                     </a>
                 </li>
 
@@ -72,6 +75,7 @@ export default function BottomNavBar() {
                 <li className='tap'>
                     <a className="tap__links" href="www.google.com" >
                         <ContactIcon />
+                        <p className='tap__links__label'>Contact</p>
                     </a>
                 </li>
 

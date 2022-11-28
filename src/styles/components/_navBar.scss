@@ -14,13 +14,17 @@
     background-color:  hsla(240, 33%, 2%, 0.8);
     opacity: 0;
 
+    transition: opacity 0.5s ease-in-out;
+
 
     @include mq (medium) {
         background-color: unset;
+        opacity: 1;
     }
 
 
     &--opacity {
+        background-color:  hsla(240, 33%, 2%, 0.8);
         opacity: 1;
     }
 
