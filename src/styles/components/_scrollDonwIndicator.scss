@@ -8,11 +8,13 @@
 
     transform: translate(-25%, -50%);
 
-    @include mq(medium) {
+    @include mq(intermediate) {
         left: 50%;
-        transform: translate(-50%, -50%);
     }
 
+    @include mq(medium) {
+        transform: translate(-50%, -50%);
+    }
 
 
     &__text {
