@@ -1,3 +1,16 @@
+export const about = {
+    name: 'Carlos Mario',
+    description: 'I\'m a Web developer focused on creating solutions using mainly JavaScript technologies to make usable, accessible and user-centered digital experiences.',
+    moreDescription: 'I enjoy creating and designing things that live on the internet, fan of puzzles and design, lover of nature walks and animals.'
+}
+
+
+export const skils = {
+    description: 'Curious learner and excellent team player, confident of my technical competencies, working knowledge, and communication skills to generate high-end solutions on general troubleshooting integrating innovative software solutions.',
+    skills: ['Problem solver', 'Self-taught', 'Lifelong learner', 'High attention to details', 'Self-managment', 'Friendly', 'Easy to talk', 'Empathic', 'Common sense', 'Enthusiastic & Optimistic' ]
+}
+
+
 export const projects = [
     {
       id: 'Project-1',

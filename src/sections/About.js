@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
+import { about } from '../data/templateData';
 
 import GradientTitle from "../components/GradientTitle";
 
@@ -16,9 +17,9 @@ export default function About() {
 
         <div className="description">
           <div className="description__text">
-            <p>Hey there! My name is Carlos Mario.</p>
-            <p>I'm a Web developer focused on make usable, accessible, inclusive, and human-centered digital experiences.</p>
-            <p>I enjoy creating and designing things that live on the internet, fan of puzzles and design, lover of nature walks and animals.</p>
+            <p>{`Hey there! My name is ${about.name}.`}</p>
+            <p>{about.description}</p>
+            <p>{about.moreDescription}</p>
           </div>
                 
           <div className="description__picture">
