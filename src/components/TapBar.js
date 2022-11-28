@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 
 // icons
 import AboutIcon from '../components/icons/AboutIcon';
@@ -11,38 +11,9 @@ import MyWorkIcon from '../components/icons/MyWorkIcon';
 import '../styles/components/_tapBar.scss';
 
 
-
-
 export default function BottomNavBar() {
 
-    const [isHide, setIsHide] = useState(false);
-
-
-    useEffect(() => {
-
-        let lastPageYOffset = 0;
-
-        const onScrollHandler = () => {
-
-            let currentPageYOffset = window.pageYOffset;
-
-            if (currentPageYOffset > lastPageYOffset) {
-                setIsHide(true);
-            } else {
-                setIsHide(false);
-            }
-
-            lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
-
-        }
-
-        window.addEventListener('scroll', onScrollHandler);
-
-        return () => {
-            window.removeEventListener('scroll', onScrollHandler)
-        }
-
-    }, [])
+    const {isHide} = useOnScrollHandler();
 
 
     return (
