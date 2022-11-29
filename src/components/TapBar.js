@@ -13,11 +13,10 @@ import '../styles/components/_tapBar.scss';
 
 export default function BottomNavBar() {
 
-    const {isHide} = useOnScrollHandler();
-
+    const {tapBarVisible} = useOnScrollHandler();
 
     return (
-        <nav className={`tapBar ${isHide && 'tapBar--show'}`} >
+        <nav className={`tapBar ${tapBarVisible && 'tapBar--show'}`} >
 
             <ul className="taps">
 

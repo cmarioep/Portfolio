@@ -16,7 +16,7 @@ import AsideEmail from "../components/AsideEmail";
 import '../styles/index.scss'
 
 // markup
-const IndexPage = ({data}) => {
+const IndexPage = () => {
 
 
   return (

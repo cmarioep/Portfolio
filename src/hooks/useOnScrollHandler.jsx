@@ -2,30 +2,37 @@ import { useState, useEffect } from 'react';
 
 export const useOnScrollHandler = () => {
 
-    const [isHide, setIsHide] = useState(false);
+    const [navBarVisible, setNavBarVisible] = useState(false);
+    const [tapBarVisible, setTapBarVisible] = useState(false);
+    const [hideScrollIndicator, setHideScrollIndicator] = useState(false);
 
 
     useEffect(() => {
 
         let lastPageYOffset = 0;
-
+        
         const onScrollHandler = () => {
-
             let currentPageYOffset = window.pageYOffset;
 
-            if (currentPageYOffset > lastPageYOffset) {
-                setIsHide(true);
-                
-                setTimeout(() => { 
-                    setIsHide(false) 
-                }, 3000)
-
+            // navBar visibility condition
+            if (window.scrollY > 10) {
+                setNavBarVisible(true);
             } else {
-                setIsHide(true);
+                setNavBarVisible(false);
+            }
 
-                setTimeout(() => { 
-                    setIsHide(false) 
-                }, 3000)
+            // scrollDown and tapBar indicator visibility condition
+            if (currentPageYOffset > lastPageYOffset) {
+                setHideScrollIndicator(true);
+                setTapBarVisible(false);
+            } else {
+                setHideScrollIndicator(false);
+                setTapBarVisible(true);
+            }
+
+            // tapBar visibility condition
+            if (window.scrollY < 10) {
+                setTapBarVisible(false);
             }
 
             lastPageYOffset = currentPageYOffset <= 0 ? 0 : currentPageYOffset;
@@ -42,7 +49,9 @@ export const useOnScrollHandler = () => {
 
 
     return {
-        isHide
+        navBarVisible,
+        hideScrollIndicator,
+        tapBarVisible,
     }
 
 }

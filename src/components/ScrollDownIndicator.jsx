@@ -7,11 +7,11 @@ import '../styles/components/_scrollDonwIndicator.scss'
 
 export default function ScrollDownIndicator() {
 
-  const { isHide } = useOnScrollHandler();
+  const { hideScrollIndicator } = useOnScrollHandler();
 
 
   return (
-    <div className={`scroll-down-indicator ${isHide && 'scroll-down-indicator--hide'}`}>
+    <div className={`scroll-down-indicator ${hideScrollIndicator && 'scroll-down-indicator--hide'}`}>
       <div className="scroll-down-indicator__arrow">
 
         <span></span>
