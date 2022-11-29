@@ -26,7 +26,7 @@ export default function SmallCard({ title, description, skills, repository, link
                 </li>
             </ul>
 
-            <a href="www.google.com" className="smallCard__title">{title}</a>
+            <a href={repository} className="smallCard__title">{title}</a>
 
             <p className="smallCard__details">{description}</p>
 
