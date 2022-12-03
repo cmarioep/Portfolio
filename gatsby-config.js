@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `New`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Carlos Mario Portfolio`,
+    description: `Web personal portfolio, Frontend Developer @cmarioep`,
+    twitterUsername: `@cmarioep`,
+    image: `/gatsby-icon.png`,
+    siteUrl: `https://www.cmarioep.com/`,
   },
   plugins: [
     "gatsby-plugin-sass",
