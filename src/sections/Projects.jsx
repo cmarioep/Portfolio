@@ -1,10 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
+
 import { projects, otherProjects } from '../data/templateData';
 
-import {GradientTitle} from "../components/GradientTitle";
-import {BigCard} from "../components/BigCard";
-import {SmallCard} from "../components/SmallCard";
+import {GradientTitle, BigCard, SmallCard} from "../components/";
 
 // styles
 import '../styles/layout/_layout.scss';

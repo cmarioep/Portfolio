@@ -1,7 +1,6 @@
 import React from 'react';
 
-import {GradientTitle} from "../components/GradientTitle";
-import {Button} from "../components/Button";
+import {GradientTitle, Button} from "../components/";
 
 // styles
 import '../styles/layout/_layout.scss';

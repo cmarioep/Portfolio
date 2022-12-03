@@ -1,12 +1,10 @@
 import React from 'react';
 import { useEffect } from 'react';
-// import { StaticImage } from "gatsby-plugin-image";
+
+import Rellax from 'rellax';   // Rellax is vanilla javascript parallax library.
 import charAnimation from 'char-animation';
 
 import {ScrollDownIndicator} from '../components/ScrollDownIndicator';
-
-// Rellax is vanilla javascript parallax library.
-import Rellax from 'rellax';
 
 import astronaut from '../images/astronaut.png';
 import montains from '../images/rock_mountains.png';
@@ -27,7 +25,7 @@ export function Hero() {
                 animation: "rubberBand"      
             }
         );
-    });
+    },[]);
 
 
     return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+
 import charAnimation from 'char-animation';
 
 // styles
@@ -17,7 +18,7 @@ export function GradientTitle(props) {
         stroke : "#66ffdb"  
       }
     );
-  });
+  },[]);
 
   return (
     <h2 className='gradient-title'>{props.title}</h2>
