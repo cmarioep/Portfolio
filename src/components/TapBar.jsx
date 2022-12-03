@@ -2,10 +2,7 @@ import React from 'react';
 import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 
 // icons
-import AboutIcon from './icons/AboutIcon';
-import SkillsIcon from './icons/SkillsIcon';
-import ContactIcon from './icons/ContactIcon';
-import MyWorkIcon from './icons/MyWorkIcon';
+import { AboutIcon, SkillsIcon, ContactIcon, MyWorkIcon } from './icons/';
 
 // style
 import '../styles/components/_tapBar.scss';
@@ -13,7 +10,7 @@ import '../styles/components/_tapBar.scss';
 
 export function TapBar() {
 
-    const {tapBarVisible} = useOnScrollHandler();
+    const { tapBarVisible } = useOnScrollHandler();
 
     return (
         <nav className={`tapBar ${tapBarVisible && 'tapBar--show'}`} >

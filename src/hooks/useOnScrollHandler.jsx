@@ -10,7 +10,7 @@ export const useOnScrollHandler = () => {
     useEffect(() => {
 
         let lastPageYOffset = 0;
-        
+
         const onScrollHandler = () => {
             let currentPageYOffset = window.pageYOffset;
 

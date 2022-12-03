@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Rellax from 'rellax';   // Rellax is vanilla javascript parallax library.
 import charAnimation from 'char-animation';
 
-import {ScrollDownIndicator} from '../components/ScrollDownIndicator';
+import { ScrollDownIndicator } from '../components/ScrollDownIndicator';
 
 import astronaut from '../images/astronaut.png';
 import montains from '../images/rock_mountains.png';
@@ -21,11 +21,11 @@ export function Hero() {
         new Rellax('.rellax');
         charAnimation(
             {
-                selector: ".animated-title", 
-                animation: "rubberBand"      
+                selector: ".animated-title",
+                animation: "rubberBand"
             }
         );
-    },[]);
+    }, []);
 
 
     return (
@@ -50,8 +50,8 @@ export function Hero() {
 
                 </div>
             </div>
-                    <ScrollDownIndicator/>
-            
+            <ScrollDownIndicator />
+
 
         </section>
     );

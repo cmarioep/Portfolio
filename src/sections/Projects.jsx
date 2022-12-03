@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { projects, otherProjects } from '../data/templateData';
 
-import {GradientTitle, BigCard, SmallCard} from "../components/";
+import { GradientTitle, BigCard, SmallCard } from "../components/";
 
 // styles
 import '../styles/layout/_layout.scss';
@@ -53,7 +53,7 @@ export function Projects() {
             />
           )
         }
-        
+
       </div>
 
     </section>

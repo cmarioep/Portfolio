@@ -12,16 +12,16 @@ export function GradientTitle(props) {
   useEffect(() => {
     charAnimation(
       {
-        selector: ".gradient-title", 
+        selector: ".gradient-title",
         animation: "rubberBand",
-        color : "",
-        stroke : "#66ffdb"  
+        color: "",
+        stroke: "#66ffdb"
       }
     );
-  },[]);
+  }, []);
 
   return (
     <h2 className='gradient-title'>{props.title}</h2>
-   );
+  );
 
 }

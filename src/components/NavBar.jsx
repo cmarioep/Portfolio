@@ -2,8 +2,7 @@ import React from 'react';
 import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 
 // icons
-import MenuIcon from './icons/MenuIcon';
-import CloseIcon from './icons/CloseIcon';
+import { MenuIcon, CloseIcon } from './icons/';
 
 // style
 import '../styles/components/_navBar.scss';
@@ -11,7 +10,7 @@ import '../styles/components/_navBar.scss';
 
 export function NavBar() {
 
-    const {navBarVisible} = useOnScrollHandler();
+    const { navBarVisible } = useOnScrollHandler();
 
     return (
         <nav className={`navBar ${navBarVisible && 'navBar--show'}`}>

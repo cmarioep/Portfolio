@@ -1,8 +1,7 @@
 import React from 'react';
 
 // icons
-import GitIcon from './icons/GitIcon';
-import LinkToProject from './icons/LinkToProject';
+import { GitIcon, LinkToProject } from './icons/';
 
 // styles
 import '../styles/components/_cards.scss';

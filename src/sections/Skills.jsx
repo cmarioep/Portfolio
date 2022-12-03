@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { skills } from '../data/templateData';
 
-import {GradientTitle} from "../components/GradientTitle";
+import { GradientTitle } from "../components/GradientTitle";
 
 import TagCloud from 'TagCloud';
 import { tags, options } from '../components/utils/TagCloudConfig';

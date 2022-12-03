@@ -1,12 +1,11 @@
 import React from 'react';
 
 // icons
-import GitIcon from './icons/GitIcon';
-import LinkToProject from './icons/LinkToProject';
+import { GitIcon, LinkToProject } from './icons/';
 
 // styles
 import '../styles/components/_cards.scss';
-import {ProjectScreenshot} from './ProjectScreenshot';
+import { ProjectScreenshot } from './ProjectScreenshot';
 
 
 export function BigCard({ id, title, description, skills, repository, link }) {
