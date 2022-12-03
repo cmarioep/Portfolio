@@ -9,7 +9,7 @@ import CloseIcon from './icons/CloseIcon';
 import '../styles/components/_navBar.scss';
 
 
-export default function NavBar() {
+export function NavBar() {
 
     const {navBarVisible} = useOnScrollHandler();
 

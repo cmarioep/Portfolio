@@ -2,14 +2,14 @@ import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 import { about } from '../data/templateData';
 
-import GradientTitle from "../components/GradientTitle";
+import {GradientTitle} from "../components/GradientTitle";
 
 // styles
 import '../styles/layout/_layout.scss';
 import '../styles/components/_description.scss';
 
 
-export default function About() {
+export function About() {
   return (
     <section id="about" className='ly-viewport ly-gap'>
 

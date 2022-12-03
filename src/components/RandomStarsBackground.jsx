@@ -5,7 +5,7 @@ import React from 'react';
 import '../styles/components/_randomStarsBackground.scss'
 
 
-export default function RandomStarsBackground() {
+export function RandomStarsBackground() {
   return (
     <div className="randomStarsBackground">
         <div className="group_1"></div>

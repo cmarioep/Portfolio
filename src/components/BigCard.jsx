@@ -6,10 +6,10 @@ import LinkToProject from './icons/LinkToProject';
 
 // styles
 import '../styles/components/_cards.scss';
-import ProjectScreenshot from './ProjectScreenshot';
+import {ProjectScreenshot} from './ProjectScreenshot';
 
 
-export default function BigCard({ id, title, description, skills, repository, link }) {
+export function BigCard({ id, title, description, skills, repository, link }) {
 
 
     return (

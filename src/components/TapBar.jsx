@@ -2,16 +2,16 @@ import React from 'react';
 import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 
 // icons
-import AboutIcon from '../components/icons/AboutIcon';
-import SkillsIcon from '../components/icons/SkillsIcon';
-import ContactIcon from '../components/icons/ContactIcon';
-import MyWorkIcon from '../components/icons/MyWorkIcon';
+import AboutIcon from './icons/AboutIcon';
+import SkillsIcon from './icons/SkillsIcon';
+import ContactIcon from './icons/ContactIcon';
+import MyWorkIcon from './icons/MyWorkIcon';
 
 // style
 import '../styles/components/_tapBar.scss';
 
 
-export default function BottomNavBar() {
+export function TapBar() {
 
     const {tapBarVisible} = useOnScrollHandler();
 

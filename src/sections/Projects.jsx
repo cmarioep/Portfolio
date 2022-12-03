@@ -2,16 +2,16 @@ import React from 'react';
 import { useEffect } from 'react';
 import { projects, otherProjects } from '../data/templateData';
 
-import GradientTitle from "../components/GradientTitle";
-import BigCard from "../components/BigCard";
-import SmallCard from "../components/SmallCard";
+import {GradientTitle} from "../components/GradientTitle";
+import {BigCard} from "../components/BigCard";
+import {SmallCard} from "../components/SmallCard";
 
 // styles
 import '../styles/layout/_layout.scss';
 import '../styles/components/_cards.scss';
 
 
-export default function Projects() {
+export function Projects() {
 
 
   useEffect(() => {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
-import charAnimation from '../../node_modules/char-animation/dist/char-animation';
+import charAnimation from 'char-animation';
 
 // styles
 import '../styles/components/_GradientTitle.scss';
 
 
-export default function GradientTitle(props) {
+export function GradientTitle(props) {
 
   useEffect(() => {
     charAnimation(

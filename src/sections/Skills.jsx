@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { skills } from '../data/templateData';
 
-import GradientTitle from "../components/GradientTitle";
+import {GradientTitle} from "../components/GradientTitle";
 import TagCloud from 'TagCloud';
 import { tags, options } from '../components/utils/TagCloudConfig';
 
@@ -11,7 +11,7 @@ import '../styles/layout/_layout.scss';
 import '../styles/components/_description.scss';
 
 
-export default function Skills() {
+export function Skills() {
 
   useEffect(() => {
     TagCloud('.description__tagCloud', tags, options);

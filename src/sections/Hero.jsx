@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 // import { StaticImage } from "gatsby-plugin-image";
-import charAnimation from '../../node_modules/char-animation/dist/char-animation';
+import charAnimation from 'char-animation';
 
-import ScrollDownIndicator from '../components/ScrollDownIndicator';
+import {ScrollDownIndicator} from '../components/ScrollDownIndicator';
 
 // Rellax is vanilla javascript parallax library.
 import Rellax from 'rellax';
@@ -16,7 +16,7 @@ import '../styles/layout/_layout.scss';
 import '../styles/components/_hero.scss';
 
 
-export default function Hero() {
+export function Hero() {
 
     useEffect(() => {
         // Accepts any className

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import GradientTitle from "../components/GradientTitle";
-import Button from "../components/Button";
+import {GradientTitle} from "../components/GradientTitle";
+import {Button} from "../components/Button";
 
 // styles
 import '../styles/layout/_layout.scss';
 import '../styles/components/_contact.scss';
 
 
-export default function Contact() {
+export function Contact() {
   return (
     <section id="contact" className='ly-viewport'>
 

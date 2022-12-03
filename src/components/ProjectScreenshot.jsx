@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 
-export default function ProjectScreenshot({image}) {
+export function ProjectScreenshot({image}) {
 
     
         if (image === 'Project-1') {

@@ -5,7 +5,7 @@ import { useOnScrollHandler } from '../hooks/useOnScrollHandler';
 import '../styles/components/_scrollDonwIndicator.scss'
 
 
-export default function ScrollDownIndicator() {
+export function ScrollDownIndicator() {
 
   const { hideScrollIndicator } = useOnScrollHandler();
 
