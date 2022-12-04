@@ -25,7 +25,7 @@ export function SmallCard({ title, description, skills, repository, link }) {
                 </li>
             </ul>
 
-            <a href={repository} target="_blank" rel="noreferrer" className="smallCard__title">{title}</a>
+            <h3><a href={repository} target="_blank" rel="noreferrer" className="smallCard__title">{title}</a></h3>
 
             <p className="smallCard__details">{description}</p>
 

@@ -17,7 +17,7 @@ export function BigCard({ id, title, description, skills, repository, link }) {
 
             <div className="bigCard__content">
 
-                <h3 className="bigCard__content__title">{title}</h3>
+                <h3 className="bigCard__content__title"><a href={link} target="_blank" rel="noreferrer">{title}</a></h3>
 
                 <p className="bigCard__content__details">{description}</p>
 

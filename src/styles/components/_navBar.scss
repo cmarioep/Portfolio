@@ -116,6 +116,12 @@
             transition: color 0.7s;
             transition-delay: 0.5s;
 
+            &:visited {
+                text-decoration: none;
+                // color: inherit;
+                color: color(secondary, neutral);
+            }
+
 
             &:hover {
                 color: color(dark, light);
