@@ -2,7 +2,6 @@ export * from './AsideEmail';
 export * from './BigCard';
 export * from './Button';
 export * from './GradientTitle';
-export * from './Head';
 export * from './NavBar';
 export * from './ProjectScreenshot';
 export * from './RandomStarsBackground';

@@ -3,6 +3,7 @@ module.exports = {
     title: `Carlos Mario Portfolio`,
     description: `Web personal portfolio, Frontend Developer @cmarioep`,
     twitterUsername: `@cmarioep`,
+    image: `src/images/icon.png`,
     siteUrl: `https://www.cmarioep.com/`,
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", {
