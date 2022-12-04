@@ -310,17 +310,6 @@
         font-weight: bold;
         @include font-size(intermediate);
         color: color(primary, dark);
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            @include z-index(everest);
-            width: 100%;
-            height: 100%;
-            border-radius: 1%;
-        }
     }
 
 
