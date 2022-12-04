@@ -16,17 +16,17 @@
   },
   "dependencies": {
     "char-animation": "^1.1.2",
-    "gatsby": "^4.24.4",
-    "gatsby-plugin-image": "^2.24.0",
-    "gatsby-plugin-sass": "^5.24.0",
-    "gatsby-plugin-sharp": "^4.24.0",
-    "gatsby-plugin-sitemap": "^5.24.0",
-    "gatsby-source-filesystem": "^4.24.0",
-    "gatsby-transformer-sharp": "^4.24.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "gatsby": "^5.2.0",
+    "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-manifest": "^5.2.0",
+    "gatsby-plugin-sass": "^6.2.0",
+    "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-source-filesystem": "^5.2.0",
+    "gatsby-transformer-sharp": "^5.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rellax": "^1.12.1",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "TagCloud": "^2.2.0"
   }
 }
