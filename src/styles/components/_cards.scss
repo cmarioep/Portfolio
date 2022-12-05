@@ -277,7 +277,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     width: 100%;
     aspect-ratio: 1/1;
@@ -326,12 +326,12 @@
 
         li {
             margin-right: 0.5rem;
-            @include font-size(small);
             color: color(primary, dark);
 
 
-            @include mq (large) {
+            @include mq (xlarge) {
                 margin-right: 1rem;
+                @include font-size(small);
             }
         }
     }
@@ -340,11 +340,6 @@
     &__skills,
     &__links {
         display: flex;
-
-        li {
-            @include font-size(small);
-            color: color(primary, dark);
-        }
 
         &__repository {
             display: inline-block;
