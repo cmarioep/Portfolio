@@ -273,18 +273,11 @@
 }
 
 
-
-// Animations
-
-@keyframes slideUp {
-    to {
-        transform: translateY(-0.3rem);
-    }
-}
-
-
 @keyframes fill {
     to {
         fill: color(primary, neutral);
     }
 }
+
+
+
