@@ -4,7 +4,7 @@ import React from 'react';
 import { GitIcon, LinkToProject } from './icons/';
 
 // styles
-import '../styles/components/_cards.scss';
+import '../styles/components/_SmallCard.scss';
 
 
 export function SmallCard({ title, description, skills, repository, link }) {

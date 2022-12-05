@@ -4,7 +4,7 @@ import React from 'react';
 import { GitIcon, LinkToProject } from './icons/';
 
 // styles
-import '../styles/components/_cards.scss';
+import '../styles/components/_BigCard.scss';
 import { ProjectScreenshot } from './ProjectScreenshot';
 
 

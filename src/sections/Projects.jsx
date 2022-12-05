@@ -7,7 +7,6 @@ import { GradientTitle, BigCard, SmallCard } from "../components/";
 
 // styles
 import '../styles/layout/_layout.scss';
-import '../styles/components/_cards.scss';
 
 
 export function Projects() {
