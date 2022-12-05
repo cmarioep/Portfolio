@@ -4,28 +4,15 @@ import React from 'react';
 import { GitIcon, LinkToProject } from './icons/';
 
 // styles
-import '../styles/components/_cards.scss';
+import '../styles/components/_SmallCard.scss';
 
 
 export function SmallCard({ title, description, skills, repository, link }) {
     return (
 
         <div className="smallCard">
-            <ul className="smallCard__links">
-                <li>
-                    <a className="smallCard__links__repository" href={repository} target="_blank" rel="noreferrer">
-                        <GitIcon />
-                    </a>
-                </li>
 
-                <li>
-                    <a className="smallCard__links__repository" href={link} target="_blank" rel="noreferrer">
-                        <LinkToProject />
-                    </a>
-                </li>
-            </ul>
-
-            <a href={repository} target="_blank" rel="noreferrer" className="smallCard__title">{title}</a>
+            <h3><a href={repository} target="_blank" rel="noreferrer" className="smallCard__title">{title}</a></h3>
 
             <p className="smallCard__details">{description}</p>
 
@@ -38,6 +25,20 @@ export function SmallCard({ title, description, skills, repository, link }) {
                     )
                 }
 
+            </ul>
+
+            <ul className="smallCard__links">
+                <li>
+                    <a className="smallCard__links__repository" href={repository} target="_blank" rel="noreferrer">
+                        <GitIcon />
+                    </a>
+                </li>
+
+                <li>
+                    <a className="smallCard__links__repository" href={link} target="_blank" rel="noreferrer">
+                        <LinkToProject />
+                    </a>
+                </li>
             </ul>
 
         </div>

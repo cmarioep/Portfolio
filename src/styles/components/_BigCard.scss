@@ -1,7 +1,6 @@
 @use '../utils/' as *;
 
 
-
 .bigCard {
     position: relative;
     display: flex;
@@ -69,15 +68,24 @@
 
 
         &__title {
-            @include font-size(intermediate);
-            color: color(primary, dark);
 
-            @include mq(standar) {
-                @include font-size(medium);
-            }
+            a {
+                color: color(primary, dark);
 
-            @include mq(medium) {
                 @include font-size(intermediate);
+                color: color(primary, dark);
+
+                @include mq(standar) {
+                    @include font-size(medium);
+                }
+
+                @include mq(medium) {
+                    @include font-size(intermediate);
+                }
+
+                :visited {
+                    color: color(primary, dark);
+                }
             }
 
         }
@@ -126,7 +134,6 @@
             }
 
 
-
             li {
                 margin-right: 1rem;
                 color: color(primary, dark);
@@ -160,9 +167,6 @@
             }
 
         }
-
-
-
 
     }
 
@@ -223,12 +227,10 @@
 
             right: -50%;
 
-
             h3,
             ul {
                 align-self: flex-end;
             }
-
 
             &__skills,
             &__links {
@@ -271,124 +273,11 @@
 }
 
 
-.smallCard {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 100%;
-    aspect-ratio: 1/1;
-    margin-bottom: 1.5rem;
-    border-radius: 1%;
-    padding: 1rem;
-
-    background-color: color(dark, neutral);
-
-    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-
-    &:hover {
-        animation: slideUp 0.3s ease-out forwards;
-    }
-
-
-    @include mq(intermediate) {
-        width: 45%;
-    }
-
-
-    @include mq (xlarge) {
-        width: 30%;
-        margin: 0;
-        padding: 1.5rem;
-    }
-
-
-    &__title {
-        font-family: $serif;
-        font-weight: bold;
-        @include font-size(intermediate);
-        color: color(primary, dark);
-    }
-
-
-    &__details {
-        line-height: 1.4;
-        color: color(secondary, neutral);
-    }
-
-
-    &__skills {
-        margin-top: 1rem;
-
-        li {
-            margin-right: 0.5rem;
-            @include font-size(small);
-            color: color(primary, dark);
-
-
-            @include mq (large) {
-                margin-right: 1rem;
-            }
-        }
-    }
-
-
-    &__skills,
-    &__links {
-        display: flex;
-        // outline: 1px dashed rgb(212, 130, 53);
-
-
-        li {
-            // outline: 1px dashed rgb(8, 163, 91);
-            // margin-right: 0.5rem;
-            @include font-size(small);
-            color: color(primary, dark);
-
-            // @include mq (large) {
-            //     margin-right: 1rem;
-            // }
-        }
-
-        &__repository {
-            display: inline-block;
-            width: 100%;
-            padding: 0.5rem;
-            // outline: 1px dashed rgb(8, 163, 91);
-
-            transition: color 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-            &:hover svg {
-                animation: fill 0.3s ease-out forwards;
-            }
-
-            svg {
-                position: relative;
-                @include z-index(sky);
-                width: 24px;
-                fill: #a8b2d1;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-            }
-        }
-    }
-
-}
-
-
-// Animations
-
-@keyframes slideUp {
-    to {
-        transform: translateY(-0.3rem);
-    }
-}
-
-
 @keyframes fill {
     to {
         fill: color(primary, neutral);
     }
 }
+
+
+
