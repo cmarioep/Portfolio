@@ -22,37 +22,30 @@ export const projects = [
   },
   {
     id: 'Project-2',
+    title: 'SoftAP-WiFi Credentials Manager',
+    description: 'Software-enabled access point for ESP8266 & ESP32 development boards; It allows configuring the WiFi credentials and saving them into the SPIFFS memory, avoiding Hardcoding them.',
+    skills: ['React', 'Arduino/C++', 'API REST'],
+    repository: 'https://github.com/cmarioep/SoftAP-WiFi-Credentials-Manager',
+    link: 'https://github.com/cmarioep/SoftAP-WiFi-Credentials-Manager',
+  },
+  {
+    id: 'Project-3',
     title: 'Gif Browser',
     description: 'A simple Gif Browser that connects to Giphy API and brings a list of gifs searched by user.',
     skills: ['React', 'Bootstrap', 'Giphy API'],
     repository: 'https://github.com/cmarioep/gif-browser',
     link: 'https://gif-browser-green.vercel.app/',
   },
-  {
-    id: 'Project-3',
-    title: 'ROD Consulting',
-    description: 'Landing page for electrical engineering consulting company, build with vanilla JavaScript, Bootstrap 5 and custom styles with Sass.',
-    skills: ['ES+6', 'Bootstrap', 'Sass'],
-    repository: 'https://github.com/cmarioep/ROD-Consulting',
-    link: 'https://cmarioep.github.io/ROD-Consulting/',
-  }
 ]
 
 
 export const otherProjects = [
   {
-    title: 'char-animation',
-    description: 'Split strings text into single chars and applies animations to each one when the cursor passes over them.',
+    title: 'Char-animation',
+    description: 'Splits the text of HTML elements into individual chars and applies animations to each one when the cursor hovers them.',
     skills: ['ES+6', 'Babel', 'npm package'],
     repository: 'https://github.com/cmarioep/char-animation',
     link: 'https://www.npmjs.com/package/char-animation',
-  },
-  {
-    title: 'SoftAP-Manager',
-    description: 'software-enabled access point for ESP boards; allows you to configure Wifi credentials and saves them in EEPROM memory.',
-    skills: ['React', ' API REST', 'C++'],
-    repository: 'https://github.com/cmarioep/SoftAP-EEPROM-Manager',
-    link: 'https://github.com/cmarioep/SoftAP-EEPROM-Manager',
   },
   {
     title: 'ESP32CAM-WS',
@@ -60,5 +53,12 @@ export const otherProjects = [
     skills: ['Node', 'Websockets', 'Arduino/C++'],
     repository: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
     link: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
-  }
+  },
+  {
+    title: 'ROD Consulting',
+    description: 'Landing page for electrical engineering consulting company.',
+    skills: ['ES+6', 'Bootstrap', 'Sass'],
+    repository: 'https://github.com/cmarioep/ROD-Consulting',
+    link: 'https://www.rodconsulting.com.co',
+  },
 ]
