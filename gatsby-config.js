@@ -14,7 +14,9 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": "./src/images/",
+        quality: 90,
+        webpQuality: 90
       },
       __key: "images"
     }]
