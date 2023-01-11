@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 
+import { about } from '../data/templateData';
+
 import Rellax from 'rellax';   // Rellax is vanilla javascript parallax library.
 import charAnimation from 'char-animation';
 
@@ -42,8 +44,8 @@ export function Hero() {
             <div className="ly-blockFlow">
                 <div className="hero rellax" data-rellax-speed="8">
                     <span className="hero__title animated-title">Hi,</span>
-                    <h1 className="hero__title animated-title">Carlos Mario</h1>
-                    <h2 className="hero__subTitle">I love building things for the web</h2>
+                    <h1 className="hero__title animated-title">{about.name}</h1>
+                    <h2 className="hero__subTitle">{about.heroDescription}</h2>
 
                 </div>
             </div>
