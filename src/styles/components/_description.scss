@@ -75,12 +75,19 @@
 
 
     &__picture {
+        display: none;
+
         width: 350px;
         height: 350px;
-        
+        margin-top: 2.5rem;
+
         filter: drop-shadow(0px 0px 10px color(primary, dark));
         transform: rotate(20deg);
         animation: floating 15s ease-in-out infinite;
+
+        @include mq(intermediate) {
+            display: initial;
+        }
 
 
         img {
