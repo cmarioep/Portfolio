@@ -68,6 +68,8 @@
 
 
         &__title {
+            width: 80%;
+            @include z-index(sky);
 
             a {
                 color: color(primary, dark);
@@ -230,6 +232,10 @@
             h3,
             ul {
                 align-self: flex-end;
+            }
+
+            &__title {
+                text-align: right;
             }
 
             &__skills,
