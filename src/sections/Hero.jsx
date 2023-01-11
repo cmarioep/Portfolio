@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 
 import { about } from '../data/templateData';
 
@@ -8,8 +9,6 @@ import charAnimation from 'char-animation';
 
 import { ScrollDownIndicator } from '../components/ScrollDownIndicator';
 
-import astronaut from '../images/astronaut.png';
-import montains from '../images/rock_mountains.png';
 
 // styles
 import '../styles/layout/_layout.scss';
@@ -19,8 +18,9 @@ import '../styles/components/_hero.scss';
 export function Hero() {
 
     useEffect(() => {
-        // Accepts any className
+
         new Rellax('.rellax');
+
         charAnimation(
             {
                 selector: ".animated-title",
@@ -34,11 +34,11 @@ export function Hero() {
         <section className="ly-viewport ly-contentStart ly-gap">
 
             <figure className="astronaut rellax" data-rellax-speed="-4">
-                <img className="astronaut__image" src={astronaut} alt="" />
+                <StaticImage className="astronaut__image" src="../images/astronaut.png" alt="Astronaut at Moon background image" />
             </figure>
 
             <figure className="montains rellax" data-rellax-speed="0">
-                <img className="montains__image" src={montains} alt="" />
+                <StaticImage className="montains__image" src="../images/rock_mountains.png" alt="Rock mountains background image" />
             </figure>
 
             <div className="ly-blockFlow">
