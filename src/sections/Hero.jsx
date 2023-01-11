@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { StaticImage } from "gatsby-plugin-image";
 
 import { about } from '../data/templateData';
 
@@ -8,6 +7,9 @@ import Rellax from 'rellax';   // Rellax is vanilla javascript parallax library.
 import charAnimation from 'char-animation';
 
 import { ScrollDownIndicator } from '../components/ScrollDownIndicator';
+
+import astronaut from '../images/astronaut.png';
+import montains from '../images/rock_mountains.png';
 
 
 // styles
@@ -34,11 +36,11 @@ export function Hero() {
         <section className="ly-viewport ly-contentStart ly-gap">
 
             <figure className="astronaut rellax" data-rellax-speed="-4">
-                <StaticImage className="astronaut__image" src="../images/astronaut.png" alt="Astronaut at Moon background image" />
+                <img className="astronaut__image" src={astronaut} alt="Astronaut at Moon background image" />
             </figure>
 
             <figure className="montains rellax" data-rellax-speed="0">
-                <StaticImage className="montains__image" src="../images/rock_mountains.png" alt="Rock mountains background image" />
+                <img className="montains__image" src={montains}  alt="Rock mountains background image" />
             </figure>
 
             <div className="ly-blockFlow">
