@@ -68,8 +68,13 @@
 
 
         &__title {
-            width: 80%;
+
             @include z-index(sky);
+
+            @include mq(medium) {
+                width: 80%;
+            }
+            
 
             a {
                 color: color(primary, dark);
