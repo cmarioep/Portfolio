@@ -20,7 +20,7 @@ export function About() {
         <div className="description__text">
           <p>{`Hey there! My name is ${about.name}.`}</p>
           <p>{about.description}</p>
-          <p>{about.moreDescription}</p>
+          <p>{about.additionalDescription}</p>
         </div>
 
         <div className="description__picture">

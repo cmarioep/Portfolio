@@ -42,11 +42,8 @@ export function Hero() {
             <div className="ly-blockFlow">
                 <div className="hero rellax" data-rellax-speed="8">
                     <span className="hero__title animated-title">Hi,</span>
-                    <h1 className="hero__title animated-title">I'm Mario.</h1>
+                    <h1 className="hero__title animated-title">Carlos Mario</h1>
                     <h2 className="hero__subTitle">I love building things for the web</h2>
-                    {/* TODO: Animation title
-                    exceptional digital experiences
-                    usable and accessible products */}
 
                 </div>
             </div>

@@ -1,7 +1,8 @@
 export const about = {
   name: 'Carlos Mario',
+  heroDescription: 'I love building things for the web',
   description: 'I\'m a Web developer focused on creating solutions using mainly JavaScript technologies to make usable, accessible and user-centered digital experiences.',
-  moreDescription: 'I enjoy creating and designing things that live on internet, fan of puzzles and design, lover of nature walks and animals.'
+  additionalDescription: 'I enjoy creating and designing things that live on internet, fan of puzzles and design, lover of nature walks and animals.'
 }
 
 
@@ -15,8 +16,8 @@ export const projects = [
   {
     id: 'Project-1',
     title: 'CSS Code Generator',
-    description: 'CSS code generator that provides visual help to obtain the desired effects, works for box-shadow, text-shadow and Glass Morphism.',
-    skills: ['React', 'Redux Toolkit', 'Sass'],
+    description: 'CSS code generator that provides visual help to obtain the code of the desired effect. Works for box-shadow, text-shadow and Glass Morphism.',
+    skills: ['React', 'Redux-Toolkit', 'Sass'],
     repository: 'https://github.com/cmarioep/CSS-Generator',
     link: 'https://box-shadow-generator-pi.vercel.app/',
   },
@@ -50,7 +51,7 @@ export const otherProjects = [
   {
     title: 'ESP32CAM-WS',
     description: 'Video streaming server with Node.js and WebSocket for ESP32-CAM.',
-    skills: ['Node', 'Websockets', 'Arduino/C++'],
+    skills: ['Node.js', 'Websockets', 'Arduino/C++'],
     repository: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
     link: 'https://github.com/cmarioep/ESP32CAM-WebsocketsServer',
   },

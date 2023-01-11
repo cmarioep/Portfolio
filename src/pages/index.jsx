@@ -10,7 +10,7 @@ import '../styles/index.scss'
 export const Head = () => {
 
   return (
-    <>
+    <>""
       {/* Primary Meta Tags */}
       <title>Carlos Mario - Web developer</title>
         <meta name="title" content="Carlos Mario - Web developer" />
@@ -35,6 +35,7 @@ export const Head = () => {
   )
 
 }
+
 
 const IndexPage = () => {
 
