@@ -1,6 +1,6 @@
 export const about = {
   name: 'Carlos Mario',
-  heroDescription: 'I love building things for the web',
+  heroDescription: 'Web developer that love building things for humans',
   description: 'I\'m a Web developer focused on creating solutions using mainly JavaScript technologies to make usable, accessible and user-centered digital experiences.',
   additionalDescription: 'I enjoy creating and designing things that live on internet, fan of puzzles and design, lover of nature walks and animals.'
 }
