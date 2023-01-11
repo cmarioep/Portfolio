@@ -1,7 +1,9 @@
 <h1 align="center">
-  <a href="https://www.cmarioep.com" target="_blank">www.cmarioep.com</a>
+  Personal Portfolio
   <br>
-  <small>Portfolio V1</small>
+  <small>
+    <a style="font-size:16px" href="https://www.cmarioep.com" target="_blank">www.cmarioep.com</a>
+  </small>    
 </h1>
 
 <p align="center">
@@ -9,8 +11,9 @@
 </p>
 
 <div align="center">
-  <img alt="Hero Screenshot" src="https://user-images.githubusercontent.com/53541185/204654377-d3a24d33-a1a7-4a5d-bd32-82d9bc2a9e57.png" />
+  <img alt="Hero Screenshot" src="https://user-images.githubusercontent.com/53541185/211841769-f7912b69-c3b3-4c6d-835a-86872e33c8c0.png" />
 </div>
+
 
 ## Installation Running for Development
 
@@ -55,12 +58,10 @@ MIT
 #### Source of inspiration
 Despite not using its code, these projects served as a source of inspiration
 
- - [https://brittanychiang.com/](https://brittanychiang.com/)
- 
- - [https://jacekjeznach.com/](https://jacekjeznach.com/)
- - [https://www.daguilera.dev/](https://www.daguilera.dev/)
+ - <a href="https://brittanychiang.com" target="_blank">https://brittanychiang.com</a>
+ - <a href="https://jacekjeznach.com/" target="_blank">https://jacekjeznach.com</a>
+ - <a href="https://www.daguilera.dev/" target="_blank">https://www.daguilera.dev</a>
 
+You can fork this repo, please give me proper credit by linking back to <a href="https://www.cmarioep.com" target="_blank">www.cmarioep.com</a>. Thanks!
 
-You can fork this repo, please give me proper credit by linking back to [www.cmarioep.com](https://www.cmarioep.com). Thanks!
-
-Please also note that I did not build this site with the intention of it being a template, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+Please also note that I did not build this site with the intention of it being a template, so if you have questions about implementation, please refer to the <a href="https://www.gatsbyjs.org/docs/" target="_blank">https://www.gatsbyjs.org/docs/</a>.
