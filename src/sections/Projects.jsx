@@ -29,9 +29,9 @@ export function Projects() {
       <div className="ly-blockFlow">
 
         {
-          projects.map(project =>
+          projects.map((project, index) =>
             <BigCard
-              key={project.id}
+              key={index}
               {...project}
             />
           )
@@ -45,9 +45,9 @@ export function Projects() {
       <div className="ly-inlineFlow">
 
         {
-          otherProjects.map(otherProject =>
+          otherProjects.map((otherProject, index) =>
             <SmallCard
-              key={Math.random() * 10}
+              key={index}
               {...otherProject}
             />
           )

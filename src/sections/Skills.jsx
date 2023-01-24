@@ -34,8 +34,11 @@ export function Skills() {
 
           <ul>
             {
-              skills.skills.map(skill =>
-                <li key={Math.random() * 20} >{skill}</li>
+              skills.skills.map((skill, index) =>
+                <li
+                  key={index} >
+                  {skill}
+                </li>
               )
             }
           </ul>
