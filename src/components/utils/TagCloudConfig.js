@@ -3,10 +3,10 @@ const tags = [
     'JavaScript', 'CSS', 'HTML',
     'npm', 'webpack', 'React',
     'Node.js', 'Express', 'mongoDB',
-    'SQL', 'Typescript', 'Sass',
-    'Firebase', 'DOM', 'Arduino',
-    'ES+6', 'API REST', 'Postman',
-    'Devtools'
+    'MySQL', 'PostgreSQL', 'Sass',
+    'Firebase', 'Bootstrap', 'Arduino',
+    'ES+6', 'API REST', 'Docker',
+    'Git'
 ];
 
 
